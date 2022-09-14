@@ -2,12 +2,13 @@ const express = require("express");
 const path = require("path");
 
 const app = express();
+const dirname = path.resolve();
 
-app.use(express.static(__dirname + '/public'));
+app.use('/public', express.static(dirname + '/public'));
 
 app.get("/", (request, response) => {
     //return response.json({ message: "Hello World!" });
-    return response.sendFile(path.join(__dirname, "views/index.html"));
+    return response.sendFile(path.join(dirname, "src/views/index.html"));
 });
 
 app.listen(3333, () => {
