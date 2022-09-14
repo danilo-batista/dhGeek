@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "This is an integrated e-commerce project for Digital House FullStack JS Bootcamp. > *Este é um projeto integrado de e-commerce para o treinamento FullStack Js Digital House.*",
   "main": "index.js",
-  "scripts": {
-    "dev": "nodemon src/index.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/danilo-batista/dhGeek.git"

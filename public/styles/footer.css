@@ -1,0 +1,15 @@
+footer {
+    height: 72px;
+}
+
+.credit {
+    text-align: center;
+    font-size: small;
+    font-weight: 500;
+    color: lightslategrey;
+}
+
+.credit a {
+    text-decoration: none;
+    color: slategrey;
+}
