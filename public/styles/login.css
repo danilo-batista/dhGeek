@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
 
-main{
+section{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,6 +13,7 @@ main{
     width: 90%;
     border-radius: 8px;
     margin-top: 25px;
+    padding: 15px;
 }
 
 .main-login h2{
@@ -21,7 +22,7 @@ main{
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
-    padding: 10px 0px 7px 30px;
+    padding: 0px 0px 7px 12px;
 }
 
 .main-login__form{
@@ -29,8 +30,9 @@ main{
     flex-direction: column;
     background-color: #fff;
     padding: 5px 20px 20px 20px;
-    width: 90%;
-    margin: 0px 20px 20px 20px;
+    width: 100%;
+    border-radius: 4px;
+    
 }
 
 .main-login__form label{
@@ -113,7 +115,70 @@ main{
     margin-top: 15px;
 }
 
+
 #div-button-register{
     display: flex;
     justify-content: flex-end;
+}
+
+@media(min-width:479px){
+    .main-login{
+        align-items: center;
+    }
+
+    .main-login button{
+        width: 25%;
+    }
+
+    .main-login__form{
+        width: 87%;
+    }
+
+    .main-login__form div div{
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
+@media(min-width:1023px){
+    section{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .main-login{
+        width: 41%;
+        height: 371px;
+    }
+
+    .main-login__form{
+        height: 280px;
+        width: 80%;
+        padding: 20px;
+    }
+
+    .main-login__form label{
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .main-login__form label input{
+        height: 36px;
+        border-radius: 8px;
+        margin-top: 5px
+    }
+
+    .main-login__form div div{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #checkbox{
+        align-items: center;
+    }
+
+    .main-login__form button{
+        height: 48px;
+        width: 37%;
+    }
 }
