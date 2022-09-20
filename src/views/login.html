@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/public/styles/reset.css">
+    <link rel="stylesheet" href="/public/styles/normalize.css">
+    <link rel="stylesheet" href="/public/styles/main.css">
+    <link rel="stylesheet" href="/public/styles/main-banner.css">
+    <link rel="stylesheet" href="/public/styles/footer.css">
+    <link rel="stylesheet" href="/public/styles/style.css">
+    <link rel="stylesheet" href="/public/styles/header.css">
+    <link rel="stylesheet" href="/public/styles/login.css">
+
+    <title>Disney Shop</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="/public/images/disney-logo.svg" alt="logo">
+		<ul class="nav-bar">
+			<li><link href="#">Clássicos</li>
+			<li><link href="#">Marvel</li>
+			<li><link href="#">Princesas</li>
+			<li><link href="#">Star Wars</li>
+		</ul>
+			<button class="login-button" type="submit">Login</button>
+			<button class="hamburguer-menu" type="submit"><img src="/public/images/menu.svg" alt="menu"></button>
+		<div class="busca">
+				<input type="text" placeholder="O que deseja encontrar ?">
+				<button><img src="/public/images/lupa.svg"></button>
+			</div>
+    </header>
+    <main>
+        <div class="main-login">
+            <h2>Entrar</h2>
+            <div class="main-login__form">
+                <form method="post">
+                <label>E-mail *
+                   <input type="email" name="email" id="email">
+                </label>
+                <label>Senha *
+                    <input type="password" name="password" id="password">
+                 </label>
+                <div>
+                    <div>
+                <label id="checkbox">Lembre-me
+                    <input type="checkbox" name="remember" id="remember">
+                </label>
+                    <a href="#">Perdeu sua senha?</a>
+                    </div>
+                      <button>Acessar</button>
+                </div>
+                </form>
+            </div>
+        </div>
+        <div class="main-login">
+            <h2>Cadastrar</h2>
+            <div class="main-login__form">
+                <form method="post">
+                <label>E-mail *
+                   <input type="email" name="email" id="email">
+                </label>
+                <label>Senha *
+                    <input type="password" name="password" id="password">
+                 </label>
+                <div>
+                    <p>Seus dados pessoais serão usados para aprimorar a sua experiência em todo este site, para gerenciar o acesso a sua conta e para outros propósitos, como descritos em nossa política de privacidade</p>
+                </div>
+                <div id="div-button-register">
+                <button id="button-register">Cadastrar</button>
+                </div>
+                </form>
+            </div>
+
+        </div>
+ 
+    </main>
+
+</body>
+</html>
