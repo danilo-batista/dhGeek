@@ -77,7 +77,7 @@ $ cd dhGeek
 $ npm install
 
 # Execute the application
-$ npm run dev
+$ npm start
 
 # The server will start at port 3333
 Access the address: http://localhost:3333/
@@ -107,6 +107,7 @@ Soon...
 - Danilo Batista: [Github](https://github.com/danilo-batista) | [LinkedIn](https://www.linkedin.com/in/danilobatista/) | [Site](https://www.danilobatista.com)
 - Renan Costa: [Github](https://github.com/) | [LinkedIn](https://www.linkedin.com/in//)
 - Renato Ramos Neto: [Github](https://github.com/) | [LinkedIn](https://www.linkedin.com/in//)
+- Aliomar Lopes Neto: [Github](https://github.com/alilopes) | [LinkedIn](https://www.linkedin.com/in/aliomar-lopes-neto/)
 - Anne Carine Bien Aime: [Github](https://github.com/) | [LinkedIn](https://www.linkedin.com/in//)
 
 #
