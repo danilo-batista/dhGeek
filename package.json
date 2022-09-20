@@ -13,6 +13,9 @@
   "bugs": {
     "url": "https://github.com/danilo-batista/dhGeek/issues"
   },
+  "scripts": {
+    "start": "nodemon ./src/index.js"
+  },
   "homepage": "https://github.com/danilo-batista/dhGeek#readme",
   "devDependencies": {
     "nodemon": "^2.0.19"
