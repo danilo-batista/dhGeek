@@ -1,15 +1,24 @@
-footer {
-    height: 72px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,700;1,500;1,700&display=swap');
 
-.credit {
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    min-width: 360px;
+    max-width: 100%;
+    height: 72px;
+
+    font-family: 'Raleway', sans-serif;
     text-align: center;
-    font-size: small;
-    font-weight: 500;
-    color: lightslategrey;
+
+    color: #778899;
 }
 
 .credit a {
+    font-size: small;
+
     text-decoration: none;
-    color: slategrey;
+    color: #778899;
 }
