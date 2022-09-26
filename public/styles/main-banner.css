@@ -9,7 +9,7 @@
     height: 192px;
     padding: 0px 16px;
 
-    background: url("/public/images/banner-castelo-disney.jpeg");
+    background: url("/public/images/banners-ads/banner-castelo-disney.jpeg");
     background-position: center;
     background-repeat: none;
     background-size: cover;
@@ -46,7 +46,7 @@
         height: 230px;
         padding: 0px 32px;
 
-        background: url("/public/images/banner-castelo-disney.jpeg");
+        background: url("/public/images/banners-ads/banner-castelo-disney.jpeg");
         background-position: center;
         background-repeat: none;
         background-size: cover;
@@ -84,7 +84,7 @@
         height: 352px;
         padding: 0px 32px;
 
-        background: url("/public/images/banner-castelo-disney.jpeg");
+        background: url("/public/images/banners-ads/banner-castelo-disney.jpeg");
         background-position: center;
         background-repeat: none;
         background-size: cover;
