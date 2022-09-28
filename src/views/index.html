@@ -6,11 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/public//styles/reset.css">
-    <link rel="stylesheet" href="/public//styles/normalize.css">
-    <link rel="stylesheet" href="/public//styles/footer.css">
-    <link rel="stylesheet" href="/public//styles/style.css">
+    <link rel="stylesheet" href="/public/styles/reset.css">
+    <link rel="stylesheet" href="/public/styles/normalize.css">
+
+    <link rel="stylesheet" href="/public/styles/main.css">
+    <link rel="stylesheet" href="/public/styles/header.css">
+    <link rel="stylesheet" href="/public/styles/main-banner.css">
     <link rel="stylesheet" href="/public/styles/products.css">
+    <link rel="stylesheet" href="/public/styles/footer.css">
+    <link rel="stylesheet" href="/public/styles/style.css">
 
     <title>Disney Shop</title>
 </head>
@@ -41,7 +45,14 @@
     </header>
     <main>
         <section class="main-banner">
-            <!-- Inserir aqui o banner rotativo -->
+            <button class="main-banner__carrousel">
+                <img class="main-banner__carrousel--arrow" src="/public/images/left-arrow.svg"
+                    alt="Seta para esquerda indicando a direção no carrossel.">
+            </button>
+            <button class="main-banner__carrousel">
+                <img class="main-banner__carrousel--arrow" src="/public/images/right-arrow.svg"
+                    alt="Seta para direita indicando a direção no carrossel.">
+            </button>
         </section>
         <section class="products">
             <div class="products-franchise__star-wars">
@@ -50,16 +61,21 @@
                         Star Wars
                     </h2>
                     <nav class="products__ver-mais-container">
-                        <p><a class="products__ver-mais-container__link products__ver-mais-container__link--styled" href="#">ver mais</a></p>
-                        <img class="products__ver-mais-container__arrow" src="/public/images/arrow.png" width="10.67px" height="10.67px" alt="seta-ver-mais">
+                        <p><a class="products__ver-mais-container__link products__ver-mais-container__link--styled"
+                                href="#">ver mais</a></p>
+                        <img class="products__ver-mais-container__arrow" src="/public/images/arrow.png" width="10.67px"
+                            height="10.67px" alt="seta-ver-mais">
                     </nav>
                 </header>
                 <article class="products-flex">
                     <div class="products-flex__item">
                         <div class="products-flex__item__rectangle">
-                            <img class="products-flex__image" src="/public/images/starwars/estatua-the-child-baby-yoda-mandalorian.webp" alt="estatua-the-child-baby-yoda-mandalorian">
+                            <img class="products-flex__image"
+                                src="/public/images/starwars/estatua-the-child-baby-yoda-mandalorian.webp"
+                                alt="estatua-the-child-baby-yoda-mandalorian">
                         </div>
-                        <a class="products__link--styled" href="#">Estátua The Child na cadeira | Baby Yoda Mandalorian</a>
+                        <a class="products__link--styled" href="#">Estátua The Child na cadeira | Baby Yoda
+                            Mandalorian</a>
                         <p class="products__price--styled">
                             R$ 3.000,00
                         </p>
@@ -69,7 +85,9 @@
                     </div>
                     <div class="products-flex__item">
                         <div class="products-flex__item__rectangle">
-                            <img class="products-flex__image" src="/public/images/starwars/livro-starwars-dark-edition.webp" alt="livro-starwars-dark-edition">
+                            <img class="products-flex__image"
+                                src="/public/images/starwars/livro-starwars-dark-edition.webp"
+                                alt="livro-starwars-dark-edition">
                         </div>
                         <a class="products__link--styled" href="#">Livro Star Wars: Dark Edition</a>
                         <p class="products__price--styled">
@@ -81,7 +99,9 @@
                     </div>
                     <div class="products-flex__item--600w">
                         <div class="products-flex__item__rectangle">
-                            <img class="products-flex__image" src="/public/images/starwars/funko-pop-296-stormtrooper-pride.webp" alt="funko-pop-296-stormtrooper-pride">
+                            <img class="products-flex__image"
+                                src="/public/images/starwars/funko-pop-296-stormtrooper-pride.webp"
+                                alt="funko-pop-296-stormtrooper-pride">
                         </div>
                         <a class="products__link--styled" href="#">Funko Pop 296 Stormtrooper Pride</a>
                         <p class="products__price--styled">
@@ -93,7 +113,9 @@
                     </div>
                     <div class="products-flex__item--600w">
                         <div class="products-flex__item__rectangle">
-                            <img class="products-flex__image" src="/public/images/starwars/funko-pop-456-darth-vader-edicao-especial.webp" alt="funko-pop-456-darth-vader-edicao-especial">
+                            <img class="products-flex__image"
+                                src="/public/images/starwars/funko-pop-456-darth-vader-edicao-especial.webp"
+                                alt="funko-pop-456-darth-vader-edicao-especial">
                         </div>
                         <a class="products__link--styled" href="#">Funko Pop 456 Darth Vader Edição Especial</a>
                         <p class="products__price--styled">
@@ -105,7 +127,9 @@
                     </div>
                     <div class="products-flex__item--900w">
                         <div class="products-flex__item__rectangle">
-                            <img class="products-flex__image" src="/public/images/starwars/pantufa-3d-chewbacca-sola-de-borracha.webp" alt="pantufa-3d-chewbacca-sola-de-borracha">
+                            <img class="products-flex__image"
+                                src="/public/images/starwars/pantufa-3d-chewbacca-sola-de-borracha.webp"
+                                alt="pantufa-3d-chewbacca-sola-de-borracha">
                         </div>
                         <a class="products__link--styled" href="#">Pantufa 3d Chewbacca | Sola de borracha</a>
                         <p class="products__price--styled">
@@ -117,7 +141,9 @@
                     </div>
                     <div class="products-flex__item--900w">
                         <div class="products-flex__item__rectangle">
-                            <img class="products-flex__image" src="/public/images/starwars/lego-starwars-milleniun-falcon.webp" alt="lego-starwars-milleniun-falcon">
+                            <img class="products-flex__image"
+                                src="/public/images/starwars/lego-starwars-milleniun-falcon.webp"
+                                alt="lego-starwars-milleniun-falcon">
                         </div>
                         <a class="products__link--styled" href="#">Lego Star Wars Milleniun Falcon</a>
                         <p class="products__price--styled">
@@ -128,264 +154,306 @@
                         </p>
                     </div>
                 </article>
-            <div class="products-franchise__princesas">
-                <header class="products__header">
-                    <h2 class="products__header__title" id="productsTitle">
-                        Princesas
-                    </h2>
-                    <nav class="products__ver-mais-container">
-                        <p><a class="products__ver-mais-container__link products__ver-mais-container__link--styled" href="#">ver mais</a></p>
-                        <img class="products__ver-mais-container__arrow" src="/public/images/arrow.png" width="10.67px" height="10.67px" alt="seta-ver-mais">
-                    </nav>
-                </header>
-                <article class="products-flex">
-                    <div class="products-flex__item">
-                        <div class="products-flex__item__rectangle">
-                            <img class="products-flex__image" src="/public/images/princess/quebra-cabeca-frozen-2oo-pecas-toyster-8033.webp" alt="quebra-cabeca-frozen-2oo-pecas-toyster">
+                <div class="products-franchise__princesas">
+                    <header class="products__header">
+                        <h2 class="products__header__title" id="productsTitle">
+                            Princesas
+                        </h2>
+                        <nav class="products__ver-mais-container">
+                            <p><a class="products__ver-mais-container__link products__ver-mais-container__link--styled"
+                                    href="#">ver mais</a></p>
+                            <img class="products__ver-mais-container__arrow" src="/public/images/arrow.png"
+                                width="10.67px" height="10.67px" alt="seta-ver-mais">
+                        </nav>
+                    </header>
+                    <article class="products-flex">
+                        <div class="products-flex__item">
+                            <div class="products-flex__item__rectangle">
+                                <img class="products-flex__image"
+                                    src="/public/images/princess/quebra-cabeca-frozen-2oo-pecas-toyster-8033.webp"
+                                    alt="quebra-cabeca-frozen-2oo-pecas-toyster">
+                            </div>
+                            <a class="products__link--styled" href="#">Quebra-cabeça Frozen 200 peças Toyster 8033</a>
+                            <p class="products__price--styled">
+                                R$ 22,55
+                            </p>
+                            <p class="products__price_conditions--styled">
+                                4x R$ 6,30
+                            </p>
                         </div>
-                        <a class="products__link--styled" href="#">Quebra-cabeça Frozen 200 peças Toyster 8033</a>
-                        <p class="products__price--styled">
-                            R$ 22,55
-                        </p>
-                        <p class="products__price_conditions--styled">
-                            4x R$ 6,30
-                        </p>
-                    </div>
-                    <div class="products-flex__item">
-                        <div class="products-flex__item__rectangle">
-                            <img class="products-flex__image" src="/public/images/princess/kit-shampoo-e-condicionador-infantil-moana.webp" alt="kit-shampoo-e-condicionador-infantil-moana">
+                        <div class="products-flex__item">
+                            <div class="products-flex__item__rectangle">
+                                <img class="products-flex__image"
+                                    src="/public/images/princess/kit-shampoo-e-condicionador-infantil-moana.webp"
+                                    alt="kit-shampoo-e-condicionador-infantil-moana">
+                            </div>
+                            <a class="products__link--styled" href="#">Kit shampoo e condicionador infantil Moana</a>
+                            <p class="products__price--styled">
+                                R$ 26,90
+                            </p>
+                            <p class="products__price_conditions--styled">
+                                4x de R$ 6,05
+                            </p>
                         </div>
-                        <a class="products__link--styled" href="#">Kit shampoo e condicionador infantil Moana</a>
-                        <p class="products__price--styled">
-                            R$ 26,90
-                        </p>
-                        <p class="products__price_conditions--styled">
-                            4x de R$ 6,05
-                        </p>
-                    </div>
-                    <div class="products-flex__item--600w">
-                        <div class="products-flex__item__rectangle">
-                            <img class="products-flex__image" src="/public/images/princess/lego-princesas-casa-da-aurora-bela-adormecida.webp" alt="lego-princesas-casa-da-aurora-bela-adormecida">
+                        <div class="products-flex__item--600w">
+                            <div class="products-flex__item__rectangle">
+                                <img class="products-flex__image"
+                                    src="/public/images/princess/lego-princesas-casa-da-aurora-bela-adormecida.webp"
+                                    alt="lego-princesas-casa-da-aurora-bela-adormecida">
+                            </div>
+                            <a class="products__link--styled" href="#">Lego Princesas Casa da Aurora
+                                Bela Adormecida</a>
+                            <p class="products__price--styled">
+                                R$ 439,78
+                            </p>
+                            <p class="products__price_conditions--styled">
+                                12x de R$ 42,64
+                            </p>
                         </div>
-                        <a class="products__link--styled" href="#">Lego Princesas Casa da Aurora
-                            Bela Adormecida</a>
-                        <p class="products__price--styled">
-                            R$ 439,78
-                        </p>
-                        <p class="products__price_conditions--styled">
-                            12x de R$ 42,64
-                        </p>
-                    </div>
-                    <div class="products-flex__item--600w">
-                        <div class="products-flex__item__rectangle">
-                            <img class="products-flex__image" src="/public/images/princess/boneca-princesas-mulan-basica.webp" alt="boneca-princesas-mulan-basica">
+                        <div class="products-flex__item--600w">
+                            <div class="products-flex__item__rectangle">
+                                <img class="products-flex__image"
+                                    src="/public/images/princess/boneca-princesas-mulan-basica.webp"
+                                    alt="boneca-princesas-mulan-basica">
+                            </div>
+                            <a class="products__link--styled" href="#">Princesas Boneca
+                                Mulan Básica</a>
+                            <p class="products__price--styled">
+                                R$ 78,99
+                            </p>
+                            <p class="products__price_conditions--styled">
+                                12x de R$ 7,66
+                            </p>
                         </div>
-                        <a class="products__link--styled" href="#">Princesas Boneca
-                            Mulan Básica</a>
-                        <p class="products__price--styled">
-                            R$ 78,99
-                        </p>
-                        <p class="products__price_conditions--styled">
-                            12x de R$ 7,66
-                        </p>
-                    </div>
-                    <div class="products-flex__item--900w">
-                        <div class="products-flex__item__rectangle">
-                            <img class="products-flex__image" src="/public/images/princess/bicicleta-aro-16-princesas-disney.webp" alt="bicicleta-aro-16-princesas-disney">
+                        <div class="products-flex__item--900w">
+                            <div class="products-flex__item__rectangle">
+                                <img class="products-flex__image"
+                                    src="/public/images/princess/bicicleta-aro-16-princesas-disney.webp"
+                                    alt="bicicleta-aro-16-princesas-disney">
+                            </div>
+                            <a class="products__link--styled" href="#">Bicicleta Aro 16 Princesas Disney</a>
+                            <p class="products__price--styled">
+                                R$ 1.032,00
+                            </p>
+                            <p class="products__price_conditions--styled">
+                                12x de R$ 86,00
+                            </p>
                         </div>
-                        <a class="products__link--styled" href="#">Bicicleta Aro 16 Princesas Disney</a>
-                        <p class="products__price--styled">
-                            R$ 1.032,00
-                        </p>
-                        <p class="products__price_conditions--styled">
-                            12x de R$ 86,00
-                        </p>
-                    </div>
-                    <div class="products-flex__item--900w">
-                        <div class="products-flex__item__rectangle">
-                            <img class="products-flex__image" src="/public/images/princess/chinelo-slim-feminino-aurora-havaianas.webp" alt="chinelo-slim-feminino-aurora-havaianas">
+                        <div class="products-flex__item--900w">
+                            <div class="products-flex__item__rectangle">
+                                <img class="products-flex__image"
+                                    src="/public/images/princess/chinelo-slim-feminino-aurora-havaianas.webp"
+                                    alt="chinelo-slim-feminino-aurora-havaianas">
+                            </div>
+                            <a class="products__link--styled" href="#">Chinelo Slim Feminino Aurora
+                                Havaianas</a>
+                            <p class="products__price--styled">
+                                R$ 36,02
+                            </p>
+                            <p class="products__price_conditions--styled">
+                                7x de R$ 5,85
+                            </p>
                         </div>
-                        <a class="products__link--styled" href="#">Chinelo Slim Feminino Aurora
-                            Havaianas</a>
-                        <p class="products__price--styled">
-                            R$ 36,02
-                        </p>
-                        <p class="products__price_conditions--styled">
-                            7x de R$ 5,85
-                        </p>
-                    </div>
-                </article>
-            </div>
-            <div class="products-franchise__marvel">
-                <header class="products__header">
-                    <h2 class="products__header__title" id="productsTitle">
-                        Marvel
-                    </h2>
-                    <nav class="products__ver-mais-container">
-                        <p><a class="products__ver-mais-container__link products__ver-mais-container__link--styled" href="#">ver mais</a></p>
-                        <img class="products__ver-mais-container__arrow" src="/public/images/arrow.png" width="10.67px" height="10.67px" alt="seta-ver-mais">
-                    </nav>
-                </header>
-                <article class="products-flex">
-                    <div class="products-flex__item">
-                        <div class="products-flex__item__rectangle">
-                            <img class="products-flex__image" src="/public/images/marvel/capa-gocase-galaxys20-vingadores.webp" alt="capa-gocase-galaxys20-vingadores">
+                    </article>
+                </div>
+                <div class="products-franchise__marvel">
+                    <header class="products__header">
+                        <h2 class="products__header__title" id="productsTitle">
+                            Marvel
+                        </h2>
+                        <nav class="products__ver-mais-container">
+                            <p><a class="products__ver-mais-container__link products__ver-mais-container__link--styled"
+                                    href="#">ver mais</a></p>
+                            <img class="products__ver-mais-container__arrow" src="/public/images/arrow.png"
+                                width="10.67px" height="10.67px" alt="seta-ver-mais">
+                        </nav>
+                    </header>
+                    <article class="products-flex">
+                        <div class="products-flex__item">
+                            <div class="products-flex__item__rectangle">
+                                <img class="products-flex__image"
+                                    src="/public/images/marvel/capa-gocase-galaxys20-vingadores.webp"
+                                    alt="capa-gocase-galaxys20-vingadores">
+                            </div>
+                            <a class="products__link--styled" href="#">Capa GoCase Galaxy S20 Vingadores</a>
+                            <p class="products__price--styled">
+                                R$ 79,90
+                            </p>
+                            <p class="products__price_conditions--styled">
+                                6x R$ 13,32
+                            </p>
                         </div>
-                        <a class="products__link--styled" href="#">Capa GoCase Galaxy S20 Vingadores</a>
-                        <p class="products__price--styled">
-                            R$ 79,90
-                        </p>
-                        <p class="products__price_conditions--styled">
-                            6x R$ 13,32
-                        </p>
-                    </div>
-                    <div class="products-flex__item">
-                        <div class="products-flex__item__rectangle">
-                            <img class="products-flex__image" src="/public/images/marvel/marvel-spiderman-miles-morales-ps4.webp" alt="marvel-spiderman-miles-morales-ps4">
+                        <div class="products-flex__item">
+                            <div class="products-flex__item__rectangle">
+                                <img class="products-flex__image"
+                                    src="/public/images/marvel/marvel-spiderman-miles-morales-ps4.webp"
+                                    alt="marvel-spiderman-miles-morales-ps4">
+                            </div>
+                            <a class="products__link--styled" href="#">Marvel's Spiderman: Miles Morales PS4</a>
+                            <p class="products__price--styled">
+                                R$ 148,99
+                            </p>
+                            <p class="products__price_conditions--styled">
+                                12x de R$ 14,44
+                            </p>
                         </div>
-                        <a class="products__link--styled" href="#">Marvel's Spiderman: Miles Morales PS4</a>
-                        <p class="products__price--styled">
-                            R$ 148,99
-                        </p>
-                        <p class="products__price_conditions--styled">
-                            12x de R$ 14,44
-                        </p>
-                    </div>
-                    <div class="products-flex__item--600w">
-                        <div class="products-flex__item__rectangle">
-                            <img class="products-flex__image" src="/public/images/marvel/funko-pop-718-wandavision-visao-anos70.webp" alt="funko-pop-718-wandavision-visao-anos70">
+                        <div class="products-flex__item--600w">
+                            <div class="products-flex__item__rectangle">
+                                <img class="products-flex__image"
+                                    src="/public/images/marvel/funko-pop-718-wandavision-visao-anos70.webp"
+                                    alt="funko-pop-718-wandavision-visao-anos70">
+                            </div>
+                            <a class="products__link--styled" href="#">Funko Pop 718 Wandavision Visão Anos 70</a>
+                            <p class="products__price--styled">
+                                R$ 134,30
+                            </p>
+                            <p class="products__price_conditions--styled">
+                                12x de R$ 13,02
+                            </p>
                         </div>
-                        <a class="products__link--styled" href="#">Funko Pop 718 Wandavision Visão Anos 70</a>
-                        <p class="products__price--styled">
-                            R$ 134,30
-                        </p>
-                        <p class="products__price_conditions--styled">
-                            12x de R$ 13,02
-                        </p>
-                    </div>
-                    <div class="products-flex__item--600w">
-                        <div class="products-flex__item__rectangle">
-                            <img class="products-flex__image" src="/public/images/marvel/caneca-3d-pantera-negra.webp" alt="caneca-3d-pantera-negra">
+                        <div class="products-flex__item--600w">
+                            <div class="products-flex__item__rectangle">
+                                <img class="products-flex__image"
+                                    src="/public/images/marvel/caneca-3d-pantera-negra.webp"
+                                    alt="caneca-3d-pantera-negra">
+                            </div>
+                            <a class="products__link--styled" href="#">Caneca 3D Pantera Negra</a>
+                            <p class="products__price--styled">
+                                R$ 69,90
+                            </p>
+                            <p class="products__price_conditions--styled">
+                                12x de R$ 6,78
+                            </p>
                         </div>
-                        <a class="products__link--styled" href="#">Caneca 3D Pantera Negra</a>
-                        <p class="products__price--styled">
-                            R$ 69,90
-                        </p>
-                        <p class="products__price_conditions--styled">
-                            12x de R$ 6,78
-                        </p>
-                    </div>
-                    <div class="products-flex__item--900w">
-                        <div class="products-flex__item__rectangle">
-                            <img class="products-flex__image" src="/public/images/marvel/lego-os-eternos-emboscada-deviante-marvel.webp" alt="lego-os-eternos-emboscada-deviante-marvel">
+                        <div class="products-flex__item--900w">
+                            <div class="products-flex__item__rectangle">
+                                <img class="products-flex__image"
+                                    src="/public/images/marvel/lego-os-eternos-emboscada-deviante-marvel.webp"
+                                    alt="lego-os-eternos-emboscada-deviante-marvel">
+                            </div>
+                            <a class="products__link--styled" href="#">Lego Os Eternos Emboscada Deviante Marvel</a>
+                            <p class="products__price--styled">
+                                R$ 179,99
+                            </p>
+                            <p class="products__price_conditions--styled">
+                                12x de R$ 17,45
+                            </p>
                         </div>
-                        <a class="products__link--styled" href="#">Lego Os Eternos Emboscada Deviante Marvel</a>
-                        <p class="products__price--styled">
-                            R$ 179,99
-                        </p>
-                        <p class="products__price_conditions--styled">
-                            12x de R$ 17,45
-                        </p>
-                    </div>
-                    <div class="products-flex__item--900w">
-                        <div class="products-flex__item__rectangle">
-                            <img class="products-flex__image" src="/public/images/marvel/boneco-loki-avengers-titan-hero-series.webp" alt="boneco-loki-avengers-titan-hero-series">
+                        <div class="products-flex__item--900w">
+                            <div class="products-flex__item__rectangle">
+                                <img class="products-flex__image"
+                                    src="/public/images/marvel/boneco-loki-avengers-titan-hero-series.webp"
+                                    alt="boneco-loki-avengers-titan-hero-series">
+                            </div>
+                            <a class="products__link--styled" href="#">Boneco Loki Avengers Titan Hero Series</a>
+                            <p class="products__price--styled">
+                                R$ 108,28
+                            </p>
+                            <p class="products__price_conditions--styled">
+                                12x de R$ 10,50
+                            </p>
                         </div>
-                        <a class="products__link--styled" href="#">Boneco Loki Avengers Titan Hero Series</a>
-                        <p class="products__price--styled">
-                            R$ 108,28
-                        </p>
-                        <p class="products__price_conditions--styled">
-                            12x de R$ 10,50
-                        </p>
-                    </div>
-                </article>
-            </div>
-            <div class="products-franchise__classicos">
-                <header class="products__header">
-                    <h2 class="products__header__title" id="productsTitle">
-                        Clássicos
-                    </h2>
-                    <nav class="products__ver-mais-container">
-                        <p><a class="products__ver-mais-container__link products__ver-mais-container__link--styled" href="#">ver mais</a></p>
-                        <img class="products__ver-mais-container__arrow" src="/public/images/arrow.png" width="10.67px" height="10.67px" alt="seta-ver-mais">
-                    </nav>
-                </header>
-                <article class="products-flex">
-                    <div class="products-flex__item">
-                        <div class="products-flex__item__rectangle">
-                            <img class="products-flex__image" src="/public/images/classic/toalhas-huggies-umedecidas-clean-48-unidades.webp" alt="toalhas-huggies-umedecidas-clean-48-unidades">
+                    </article>
+                </div>
+                <div class="products-franchise__classicos">
+                    <header class="products__header">
+                        <h2 class="products__header__title" id="productsTitle">
+                            Clássicos
+                        </h2>
+                        <nav class="products__ver-mais-container">
+                            <p><a class="products__ver-mais-container__link products__ver-mais-container__link--styled"
+                                    href="#">ver mais</a></p>
+                            <img class="products__ver-mais-container__arrow" src="/public/images/arrow.png"
+                                width="10.67px" height="10.67px" alt="seta-ver-mais">
+                        </nav>
+                    </header>
+                    <article class="products-flex">
+                        <div class="products-flex__item">
+                            <div class="products-flex__item__rectangle">
+                                <img class="products-flex__image"
+                                    src="/public/images/classic/toalhas-huggies-umedecidas-clean-48-unidades.webp"
+                                    alt="toalhas-huggies-umedecidas-clean-48-unidades">
+                            </div>
+                            <a class="products__link--styled" href="#">Toalhas Huggies Umedecidas Clean 48 unidades</a>
+                            <p class="products__price--styled">
+                                R$ 12,15
+                            </p>
+                            <p class="products__price_conditions--styled">
+                                2x R$ 6,63
+                            </p>
                         </div>
-                        <a class="products__link--styled" href="#">Toalhas Huggies Umedecidas Clean 48 unidades</a>
-                        <p class="products__price--styled">
-                            R$ 12,15
-                        </p>
-                        <p class="products__price_conditions--styled">
-                            2x R$ 6,63
-                        </p>
-                    </div>
-                    <div class="products-flex__item">
-                        <div class="products-flex__item__rectangle">
-                            <img class="products-flex__image" src="/public/images/classic/comoda-infantil-3-gavetas-minnie-disney-fun.webp" alt="comoda-infantil-3-gavetas-minnie-disney-fun">
+                        <div class="products-flex__item">
+                            <div class="products-flex__item__rectangle">
+                                <img class="products-flex__image"
+                                    src="/public/images/classic/comoda-infantil-3-gavetas-minnie-disney-fun.webp"
+                                    alt="comoda-infantil-3-gavetas-minnie-disney-fun">
+                            </div>
+                            <a class="products__link--styled" href="#">Cômoda infantil 3 gavetas Minnie Disney Fun4</a>
+                            <p class="products__price--styled">
+                                R$ 699,90
+                            </p>
+                            <p class="products__price_conditions--styled">
+                                10x de R$ 69,99
+                            </p>
                         </div>
-                        <a class="products__link--styled" href="#">Cômoda infantil 3 gavetas Minnie Disney Fun4</a>
-                        <p class="products__price--styled">
-                            R$ 699,90
-                        </p>
-                        <p class="products__price_conditions--styled">
-                            10x de R$ 69,99
-                        </p>
-                    </div>
-                    <div class="products-flex__item--600w">
-                        <div class="products-flex__item__rectangle">
-                            <img class="products-flex__image" src="/public/images/classic/pantufa-minnie-mouse-original-solado-borracha.webp" alt="pantufa-minnie-mouse-original-solado-borracha">
+                        <div class="products-flex__item--600w">
+                            <div class="products-flex__item__rectangle">
+                                <img class="products-flex__image"
+                                    src="/public/images/classic/pantufa-minnie-mouse-original-solado-borracha.webp"
+                                    alt="pantufa-minnie-mouse-original-solado-borracha">
+                            </div>
+                            <a class="products__link--styled" href="#">Pantufa Minnie Mouse Original Solado Borracha</a>
+                            <p class="products__price--styled">
+                                R$ 95,92
+                            </p>
+                            <p class="products__price_conditions--styled">
+                                12x de R$ 9,30
+                            </p>
                         </div>
-                        <a class="products__link--styled" href="#">Pantufa Minnie Mouse Original Solado Borracha</a>
-                        <p class="products__price--styled">
-                            R$ 95,92
-                        </p>
-                        <p class="products__price_conditions--styled">
-                            12x de R$ 9,30
-                        </p>
-                    </div>
-                    <div class="products-flex__item--600w">
-                        <div class="products-flex__item__rectangle">
-                            <img class="products-flex__image" src="/public/images/classic/quebra-cabecas-office-mickey-1500-pecas.webp" alt="quebra-cabecas-office-mickey-1500-pecas">
+                        <div class="products-flex__item--600w">
+                            <div class="products-flex__item__rectangle">
+                                <img class="products-flex__image"
+                                    src="/public/images/classic/quebra-cabecas-office-mickey-1500-pecas.webp"
+                                    alt="quebra-cabecas-office-mickey-1500-pecas">
+                            </div>
+                            <a class="products__link--styled" href="#">Quebra-cabeça Office Mickey 1500 peças</a>
+                            <p class="products__price--styled">
+                                R$ 107,76
+                            </p>
+                            <p class="products__price_conditions--styled">
+                                6x de R$ 17,96
+                            </p>
                         </div>
-                        <a class="products__link--styled" href="#">Quebra-cabeça Office Mickey 1500 peças</a>
-                        <p class="products__price--styled">
-                            R$ 107,76
-                        </p>
-                        <p class="products__price_conditions--styled">
-                            6x de R$ 17,96
-                        </p>
-                    </div>
-                    <div class="products-flex__item--900w">
-                        <div class="products-flex__item__rectangle">
-                            <img class="products-flex__image" src="/public/images/classic/camiseta-menina-teen-mickey-branco-cativa.webp" alt="camiseta-menina-teen-mickey-branco-cativa">
+                        <div class="products-flex__item--900w">
+                            <div class="products-flex__item__rectangle">
+                                <img class="products-flex__image"
+                                    src="/public/images/classic/camiseta-menina-teen-mickey-branco-cativa.webp"
+                                    alt="camiseta-menina-teen-mickey-branco-cativa">
+                            </div>
+                            <a class="products__link--styled" href="#">Camiseta Menina Teen Mickey Branco Cativa</a>
+                            <p class="products__price--styled">
+                                R$ 31,99
+                            </p>
+                            <p class="products__price_conditions--styled">
+                                6x de R$ 6,02
+                            </p>
                         </div>
-                        <a class="products__link--styled" href="#">Camiseta Menina Teen Mickey Branco Cativa</a>
-                        <p class="products__price--styled">
-                            R$ 31,99
-                        </p>
-                        <p class="products__price_conditions--styled">
-                            6x de R$ 6,02
-                        </p>
-                    </div>
-                    <div class="products-flex__item--900w">
-                        <div class="products-flex__item__rectangle">
-                            <img class="products-flex__image" src="/public/images/classic/pipoqueira-tampa-vidro-mexedor-brinox-5-litros.webp" alt="pipoqueira-tampa-vidro-mexedor-brinox-5-litros">
+                        <div class="products-flex__item--900w">
+                            <div class="products-flex__item__rectangle">
+                                <img class="products-flex__image"
+                                    src="/public/images/classic/pipoqueira-tampa-vidro-mexedor-brinox-5-litros.webp"
+                                    alt="pipoqueira-tampa-vidro-mexedor-brinox-5-litros">
+                            </div>
+                            <a class="products__link--styled" href="#">Pipoqueira Tampa Vidro Mexedor Brinox 5,5l</a>
+                            <p class="products__price--styled">
+                                R$ 199,99
+                            </p>
+                            <p class="products__price_conditions--styled">
+                                6x de R$ 33,33
+                            </p>
                         </div>
-                        <a class="products__link--styled" href="#">Pipoqueira Tampa Vidro Mexedor Brinox 5,5l</a>
-                        <p class="products__price--styled">
-                            R$ 199,99
-                        </p>
-                        <p class="products__price_conditions--styled">
-                            6x de R$ 33,33
-                        </p>
-                    </div>
-                </article>
-            </div>
+                    </article>
+                </div>
         </section>
         <section class="main-footer">
             <!-- Inserir aqui o rodapé de links/contato comum entre as páginas -->
