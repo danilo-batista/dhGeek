@@ -23,13 +23,15 @@ section{
     font-weight: 700;
     line-height: 28px;
     padding: 0px 0px 7px 12px;
+    text-align: left;
+    width: 87%;
 }
 
 .main-login__form{
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    padding: 5px 20px 20px 20px;
+    padding: 5px 10px 20px 10px;
     width: 100%;
     border-radius: 4px;
     
@@ -73,6 +75,10 @@ section{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+#tag-tablet{
+    display: none;
 }
 
 .main-login__form div div{
@@ -119,6 +125,12 @@ section{
 #div-button-register{
     display: flex;
     justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#div-register{
+    flex-direction: column;
+    align-items: stretch;
 }
 
 @media(min-width:479px){
@@ -138,6 +150,18 @@ section{
         align-items: center;
         flex-direction: row;
     }
+    #div-register{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    #tag-tablet{
+        display: inline;
+    }
+
+    #tag-all{
+        display: none;
+    }
 }
 
 @media(min-width:1023px){
@@ -148,11 +172,11 @@ section{
 
     .main-login{
         width: 41%;
-        height: 371px;
+        height: 431px;
     }
-
+    
     .main-login__form{
-        height: 280px;
+        height: 330px;
         width: 80%;
         padding: 20px;
     }
@@ -173,12 +197,40 @@ section{
         align-items: flex-start;
     }
 
+
+    .main-login p{
+        flex: 1;
+        margin-right: 10px;
+        line-height: 14px;
+    }
+
     #checkbox{
         align-items: center;
+        padding: 0;
+    }
+     
+    #div-button-register{
+       flex: 0.5;
+    }
+
+    #button-register{
+        width: 100%;
+    }
+
+    #div-register{
+        flex-direction: row;
     }
 
     .main-login__form button{
         height: 48px;
         width: 37%;
+    }
+
+    #tag-tablet{
+        display: none;
+    }
+
+    #tag-all{
+        display:block;
     }
 }
