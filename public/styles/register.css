@@ -1,0 +1,224 @@
+*{
+    text-decoration: none;
+    color: #BBBBBB;
+    font-family: "Raleway";
+}
+
+
+main{
+    width: 90%;
+}
+
+.main-login{
+    width: 100%;
+}
+
+input::-webkit-calendar-picker-indicator{
+    display: none;
+}
+
+#date{
+    color: #bbb;
+    font-size: 15px;
+}
+
+.first-div__form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.first-div__form label{
+    width: 90%;
+}
+
+.first-div__form input{
+    margin-top: 10px;
+    height: 24px;
+}
+
+#second-div__form{
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+}
+#second-div__form-first-div{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+#second-div__form-first-div label{
+    width: 90%;
+}
+
+#second-div__form-first-div input{
+    margin-top: 10px;
+    height: 24px;
+}
+
+#second-div__form-second-div{
+    flex-direction: column;
+    width: 100%;
+}
+
+.separated-color{
+    border: 0.75px solid #70A9FF;
+    margin: 20px 0;
+}
+
+.main-login button{
+    width: 100%;
+    margin-top: 12px;
+}
+
+.main-login p{
+    font-size: 12px;
+    line-height: 14px;
+    margin: 10px 0;
+}
+
+.main-login form div{
+    flex-direction: column;
+}
+
+.main-login form div div{
+    flex-direction: row;
+    align-items: center;
+}
+
+#label-checkbox{
+    color: #BBBBBB;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+.main-login a{
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#terms{
+    flex-direction: column;
+}
+
+@media(min-width:479px){
+    .main-login form div div{
+         align-items: baseline;
+    }
+
+    #terms{
+        flex-direction: row;
+    }
+
+    .main-login p{
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    #label-checkbox{
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    
+}
+
+@media(min-width:1023px){
+    .separated-color{
+        height: 102%;
+        margin: 0 25px;
+    }
+
+    .main-login{
+        height: 380px;
+    }
+
+    .main-login__form{
+        width: 90%;
+        height: 280px;
+    }
+
+    .main-login__form form{
+        flex-direction: row;
+        display: flex;
+        height: 100%;
+    }
+
+    .main-login__form div{
+        justify-content: normal;
+        align-items: normal;
+        margin-top: 0;
+    }
+
+    .first-div__form {
+        width: 50%;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .first-div__form label{
+        width: 100%;
+    }
+    
+
+    #second-div__form{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+    }
+    
+
+    #second-div__form-first-div{
+        flex-direction: column;
+        width: 50%;
+        align-items: stretch;
+        display: flex;
+    }
+
+    #second-div__form-first-div label{
+        width: 100%;
+    }
+
+    #second-div__form-first-div input{
+        height: 36px;
+        margin-top: 5px;
+    }
+    
+
+    #second-div__form-second-div{
+        width: 40%;
+        flex-direction: column;
+        justify-content: space-between;
+        display: flex;
+    }
+    
+
+    #terms{
+        flex-direction: column;
+        font-size: 16px;
+        display: flex;
+    }
+
+    #terms p, #label-checkbox{
+        font-size: 16px;
+    }
+    
+
+    #second-div__form button{
+        font-size: 20px;
+    }
+
+    
+
+
+
+
+}
+

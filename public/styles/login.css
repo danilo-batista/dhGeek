@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-login{
+    background-color:#F5F5F5;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border-radius: 8px;
+    margin-top: 25px;
+    padding: 15px;
+}
+
+.main-login h2{
+    font-family: "Raleway";
+    color: #464646;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    padding: 0px 0px 7px 12px;
+    text-align: left;
+    width: 87%;
+}
+
+.main-login__form{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 5px 10px 20px 10px;
+    width: 100%;
+    border-radius: 4px;
+    
+}
+
+.main-login__form label{
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto";
+    padding: 10px 0px;
+    color: #464646;
+}
+
+.main-login__form label input{
+    border: 1px solid #70A9FF;
+    border-radius: 4px;
+    background-color: #F5F5F5 ;
+}
+
+#checkbox{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: baseline;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    font-family: "Raleway";
+    color: #bbb;
+}
+
+#remember{
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+    border: 1px solid #70A9FF;
+}
+
+.main-login__form div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tag-tablet{
+    display: none;
+}
+
+.main-login__form div div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-login__form a{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 900;
+    font-family: "Raleway";
+    color: #bbb;
+}
+
+.main-login button{
+    border: none;
+    color: #fff;
+    background-color: #70A9FF;
+    border-radius: 8px;
+    width: 40%;
+    height: 36px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.78px;
+    font-family: "Raleway";
+}
+
+.main-login p{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    font-family: "Raleway";
+    color: #bbb;
+}
+
+#button-register{
+    margin-top: 15px;
+}
+
+
+#div-button-register{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#div-register{
+    flex-direction: column;
+    align-items: stretch;
+}
+
+@media(min-width:479px){
+    .main-login{
+        align-items: center;
+    }
+
+    .main-login button{
+        width: 25%;
+    }
+
+    .main-login__form{
+        width: 87%;
+    }
+
+    .main-login__form div div{
+        align-items: center;
+        flex-direction: row;
+    }
+    #div-register{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    #tag-tablet{
+        display: inline;
+    }
+
+    #tag-all{
+        display: none;
+    }
+}
+
+@media(min-width:1023px){
+    section{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .main-login{
+        width: 41%;
+        height: 431px;
+    }
+    
+    .main-login__form{
+        height: 330px;
+        width: 80%;
+        padding: 20px;
+    }
+
+    .main-login__form label{
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .main-login__form label input{
+        height: 36px;
+        border-radius: 8px;
+        margin-top: 5px
+    }
+
+    .main-login__form div div{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .main-login p{
+        flex: 1;
+        margin-right: 10px;
+        line-height: 14px;
+    }
+
+    #checkbox{
+        align-items: center;
+        padding: 0;
+    }
+     
+    #div-button-register{
+       flex: 0.5;
+    }
+
+    #button-register{
+        width: 100%;
+    }
+
+    #div-register{
+        flex-direction: row;
+    }
+
+    .main-login__form button{
+        height: 48px;
+        width: 37%;
+    }
+
+    #tag-tablet{
+        display: none;
+    }
+
+    #tag-all{
+        display:block;
+    }
+}
