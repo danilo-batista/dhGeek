@@ -1,0 +1,357 @@
+/* --------- general ---------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+  min-width: 100%;
+}
+
+/* ---------- mobile first ---------- */
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.item__header {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 1rem;
+}
+
+.advertisement-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95vw;
+  height: 4rem;
+  border-radius: 8px;
+}
+
+.advertisement-banner__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95vw;
+  height: 4rem;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.item__header--path {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 95%;
+  font-weight: 700;
+  margin-top: 1rem;
+  color: #BBBBBB;
+}
+
+.item__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item__container__gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 18rem;
+}
+
+.item__container__main-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  border: 1px solid #BBBBBB;
+  border-radius: 8px;
+  width: inherit;
+  margin-bottom: 20px;
+}
+
+.item__container__miniatures-card {
+  display: flex;
+  max-width: 20rem;
+  justify-content: space-evenly;
+  gap: 20px;
+  max-width: fit-content;
+}
+
+
+.item__container__miniatures-card--mini1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #BBBBBB;
+  border-radius: 8px;
+  width: 5.2rem;
+}
+
+.item__container__miniatures-card--mini2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #BBBBBB;
+  border-radius: 8px;
+  width: 5.2rem;
+}
+
+.item__container__miniatures-card--mini3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #BBBBBB;
+  border-radius: 8px;
+  width: 5.2rem;
+}
+
+.img-main {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.img-mini {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.item__data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90vw;
+  margin-right: 10px;
+}
+
+.item__data__title {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  width: 90vw;
+}
+
+.item__data__title--discount {
+  padding: 5px;
+  max-width: 4rem;
+  background: #E9116C;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 0.88rem;
+  text-align: center;
+  color: #FFF;
+}
+
+.item__data__title--name {
+  margin-top: 0.75rem;
+  font-weight: 700;
+  font-size: 1.26rem;
+  line-height: 23px;
+  color: #464646;
+  margin-bottom: 1rem;
+}
+
+.item__data__price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.item__data__price--old {
+  font-weight: 700;
+  line-height: 19px;
+  display: flex;
+  align-items: flex-end;
+  text-decoration-line: line-through;
+  color: #BBBBBB;
+  mix-blend-mode: normal
+}
+.item__data__price--final {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: flex-start;
+  color: #464646;
+  mix-blend-mode: normal;
+}
+.item__data__price--conditions {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #BBBBBB;
+}
+
+.item__data__shipping {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item__data__shipping--break {
+  width: 90vw;
+  margin: 2rem 0 2rem 0;
+}
+
+.item__data__shipping--label {
+  display: flex;
+  font-weight: 700;
+  font-size: 0.882rem;
+  color: #AAAAAA;
+}
+
+.item__data__shipping__input--container {
+  display: flex;
+  justify-content: center;
+  width: 90vw;
+  margin: 1rem 0rem 1rem 0rem;
+}
+
+.item__data__shipping--input {
+  width: 16rem;
+  height: 2.268rem;
+  left: 1rem;
+  top: 64.638rem;
+  background: #FFFFFF;
+  border: 1px solid #70A9FF;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.item__data__shipping--button {
+  width: 70px;
+  height: 36px;
+  left: 274px;
+  top: 1026px;
+  background: #70A9FF;
+  border: 1px solid #70A9FF;
+  border-radius: 0px 8px 8px 0px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.item__data__shipping__input--no-cep {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #70A9FF;
+}
+
+.item__data__shipping--suggestion {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #AAAAAA;
+}
+
+.item__data__buy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item__data__buy__amount--label {
+  font-weight: 700;
+  font-size: 0.882rem;
+  line-height: 1rem;
+  text-align: right;
+  color: #BBBBBB;
+  padding-right: 1rem;
+}
+
+.item__data__buy__amount--input {
+  width: 2rem;
+  height: 2rem;
+  background: #F5F5F5;
+  border: 1px solid #70A9FF;
+  border-radius: 2px;
+}
+
+.item__data__buy__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  width: 90vw;
+  margin-top: 2rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.item__data__buy__buttons--buy {
+  height: 36px;
+  background: #70A9FF;
+  border: 1px solid #70A9FF;
+  border-radius: 8px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.item__data__buy__buttons--cart {
+  height: 36px;
+  background: #FFFFFF;
+  border: 1px solid #70A9FF;
+  border-radius: 8px;
+  color: #70A9FF;
+  cursor: pointer;
+}
+
+.item__data__shipping--suggestion {
+  text-align: center;
+}
+
+.products {
+  width: 100vw;
+  background: #D9D9D9;
+}
+
+.products__more-products {
+  display: flex;
+  width: 90vw;
+  justify-content: space-between;
+  margin: 1rem auto 1rem 0.819rem;
+}
+
+.products__more-products--text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 19px;
+  color: #464646;
+}
+
+.item__description {
+  width: 90vw;
+  margin: 3.528rem auto 3.528rem auto;
+}
+
+.item__description--title {
+  font-weight: 700;
+  font-size: 1.26rem;
+  line-height: 23px;
+  color: #464646;
+  padding-bottom: 1rem;
+}
+
+.item__description--text {
+  font-weight: 500;
+  line-height: 24px;
+  color: #464646;
+}
