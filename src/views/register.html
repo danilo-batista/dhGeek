@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/public/styles/reset.css">
+    <link rel="stylesheet" href="/public/styles/normalize.css">
+    <link rel="stylesheet" href="/public/styles/main.css">
+    <link rel="stylesheet" href="/public/styles/main-banner.css">
+    <link rel="stylesheet" href="/public/styles/footer.css">
+    <link rel="stylesheet" href="/public/styles/style.css">
+    <link rel="stylesheet" href="/public/styles/header.css">
+    <link rel="stylesheet" href="/public/styles/login.css">
+    <link rel="stylesheet" href="/public/styles/register.css">
+
+    <title>Disney Shop</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="/public/images/disney-logo.svg" alt="logo">
+		<ul class="nav-bar">
+			<li><link href="#">Clássicos</li>
+			<li><link href="#">Marvel</li>
+			<li><link href="#">Princesas</li>
+			<li><link href="#">Star Wars</li>
+		</ul>
+			<button class="login-button" type="submit">Login</button>
+			<button class="hamburguer-menu" type="submit"><img src="/public/images/menu.svg" alt="menu"></button>
+		<div class="busca">
+				<input type="text" placeholder="O que deseja encontrar ?">
+				<button><img src="/public/images/lupa.svg"></button>
+			</div>
+    </header>
+    <section>
+    <main>
+        <div class="main-login">
+            <h2>Crie Sua conta</h2>
+            <div class="main-login__form">
+                <form method="post">
+                <div class="first-div__form">
+                <label>Primeiro Nome*
+                   <input type="text" name="first-name" id="first-name">
+                </label>
+                <label>Sobrenome*
+                    <input type="text" name="last-name" id="last-name">
+                </label>
+                <label>Data de Nascimento*
+                    <input type="date" name="date" id="date">
+                </label>
+                </div>
+                <div class="separated-color"></div>
+                <div id="second-div__form">
+                <div id="second-div__form-first-div">
+                <label>E-mail*
+                    <input type="email" name="email" id="email">
+                </label>
+                <label>Senha*
+                     <input type="password" name="password" id="password">
+                  </label>
+                <label>Confirme sua Senha*
+                    <input type="password" name="confirm-password" id="confirm-password">
+                </label>
+                </div>
+                <div id="second-div__form-second-div">
+                    <div id="terms">
+                    <p>Ao criar uma conta, você concorda com os <strong>Termos de Uso</strong> e com a <strong>Política de Privacidade.</strong></p>
+                    <div>
+                    <input type="checkbox" name="accept" id="accept">
+                    <label id="label-checkbox">Sim! Gostaria de receber atualizações e promoções especiais da DisneyShop.</label>
+                    </div>
+                    </div>
+                    <button>Criar minha conta</button>
+                </div>
+                </div>
+                </form>
+            </div>
+            <a href="#">Já possui uma conta? Faça o <strong>Login.</strong></a>
+        </div>
+    </main>
+    </section>
+</body>
+</html>
