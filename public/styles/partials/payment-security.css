@@ -22,13 +22,6 @@
     color: var(--disney-darkgray);
 }
 
-.payments__title {
-    padding: 0.5rem;
-
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-
 .payments__methods--brands {
     display: flex;
     flex-direction: row;
@@ -38,6 +31,151 @@
     height: 3rem;
 }
 
-@media(min-width: 480px) {}
+.payments__methods {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
-@media(min-width: 1024px) {}
+.payments__methods img {
+    height: auto;
+    margin: 1rem;
+}
+
+.payments__title,
+.security__title {
+    padding: 0.5rem;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.security {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 328px;
+    margin: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--disney-mediumgray);
+
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+
+    color: var(--disney-darkgray);
+}
+
+.security_methods--brands {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 3rem;
+}
+
+@media(min-width: 480px) {
+    .main-footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .payments {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        width: 703px;
+        height: 178px;
+        margin: 0.5rem 1.5rem;
+        border-radius: 0.5rem;
+        border: 1px solid var(--disney-mediumgray);
+
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+
+        color: var(--disney-darkgray);
+    }
+
+    .security {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        width: 342px;
+        margin: 0.5rem 1.5rem;
+        border-radius: 0.5rem;
+        border: 1px solid var(--disney-mediumgray);
+
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+
+        color: var(--disney-darkgray);
+    }
+
+    .security_methods--brands {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        height: 4rem;
+    }
+}
+
+@media(min-width: 1024px) {
+    .main-footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .payments {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        width: 60%;
+        height: 178px;
+        margin: 0.5rem 1.5rem;
+        border-radius: 0.5rem;
+        border: 1px solid var(--disney-mediumgray);
+
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+
+        color: var(--disney-darkgray);
+    }
+
+    .security {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        width: 40%;
+        margin: 0.5rem 1.5rem;
+        border-radius: 0.5rem;
+        border: 1px solid var(--disney-mediumgray);
+
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+
+        color: var(--disney-darkgray);
+    }
+
+    .security_methods--brands {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        height: 4rem;
+    }
+}
