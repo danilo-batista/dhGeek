@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/public/styles/partials/main-banner.css">
     <link rel="stylesheet" href="/public/styles/home/products.css">
     <link rel="stylesheet" href="/public/styles/partials/payment-security.css">
+    <link rel="stylesheet" href="/public/styles/partials/contact-info.css">
     <link rel="stylesheet" href="/public/styles/partials/footer.css">
 
     <title>Loja | Disney Brasil</title>
@@ -497,6 +498,48 @@
                     </div>
                 </div>
             </fieldset>
+        </section>
+        <section class="contact-info">
+            <div class="contact-info__menu">
+                <img class="contact-info__menu--brand" src="/public/images/brands/disney-logo.svg" alt="logo">
+                <ul>
+                    <li>
+                        <link href="#">Clássicos
+                    </li>
+                    <li>
+                        <link href="#">Marvel
+                    </li>
+                    <li>
+                        <link href="#">Princesas
+                    </li>
+                    <li>
+                        <link href="#">Star Wars
+                    </li>
+                    <li>
+                        <link href="#">Login
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div>
+                <form class="contact-info__form" action="https://api.staticforms.xyz/submit" method="POST">
+                    <h3>Fale conosco</h3>
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email">
+                    <label for="message">Deixe sua mensagem</label>
+                    <textarea name="message" cols="30" rows="10" placeholder="Digite sua messagem"> </textarea>
+                    <button type="submit">Enviar</button>
+                    <input type="hidden" name="accessKey" value="29cb2464-1e88-48c9-a397-964b06b19673">
+                    <input type="hidden" name="redirectTo" value="http://localhost:3333/">
+                </form>
+            </div>
+            <div class="contact-info__copyright">
+                <p class="contact-info__copyright--message">© Disney © Disney•Pixar © & ™ Lucasfilm LTD © <span
+                        id="year"></span> MARVEL. Reservados todos os
+                    direitos, Disney Entertainment</p>
+            </div>
         </section>
     </main>
 
