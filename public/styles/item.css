@@ -253,7 +253,13 @@ body {
   color: #70A9FF;
 }
 
-.item__data__shipping--suggestion {
+.item__data__suggestion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item__data__suggestion--text {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -314,10 +320,6 @@ body {
   cursor: pointer;
 }
 
-.item__data__shipping--suggestion {
-  text-align: center;
-}
-
 .products {
   width: 100vw;
   background: #D9D9D9;
@@ -354,4 +356,103 @@ body {
   font-weight: 500;
   line-height: 24px;
   color: #464646;
+}
+
+/* ---------- 600px ---------- */
+
+@media (min-width: 600px) {
+
+  .item__container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 90vw;
+    margin-top: 1rem;
+  }
+
+  .item__data {
+    justify-content: center;
+    align-items: flex-start;
+    width: 40vw;
+    margin-right: 0;
+  }
+  
+  .item__data__title {
+    width: 40vw;
+  }
+  
+  .item__data__shipping {
+    width: 40vw;
+  }
+  
+  .item__data__shipping--break {
+    width: 40vw;
+  }
+  
+  .item__data__shipping__input--container {
+    width: 40vw;
+  }
+  
+  .item__data__buy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 40vw;
+  }
+  
+  .item__data__buy__buttons {
+    width: 40vw;
+  }
+
+}
+
+@media (min-width: 900px) {
+
+  .item__data__buy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 40vw;
+  }
+
+  .item__data__buy__buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .item__data__buy__buttons--buy {
+    width: 17.5rem;
+  }
+  
+  .item__data__buy__buttons--cart {
+    width: 17.5rem;
+  }
+
+}
+
+@media (min-width: 1000px) {
+
+  .item__data__buy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 40vw;
+  }
+
+  .item__data__buy__buttons {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .item__data__buy__buttons--buy {
+    width: 17.5rem;
+  }
+  
+  .item__data__buy__buttons--cart {
+    width: 17.5rem;
+  }
+
 }
