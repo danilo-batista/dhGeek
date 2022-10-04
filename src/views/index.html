@@ -60,12 +60,39 @@
         </section>
     </main>
     <footer>
+        <div id="form">
+            <div class="disney">
+                <img  src="/public/images/brands/disney-logo.svg" alt="">
+            </div>
+            <div class="itens">
+            <a href="">Home</a>
+            <a href="">Disney Clássicos</a>
+            <a href="">StarWars</a>
+            <a href="">Marvel</a>
+            <a href="">Princesas</a>
+            <a href="">Login</a>
+           </div>   
+            <div class="form">
+                <h2 >Fale conosco</h2>
+                <form class="formulario" action="https://api.staticforms.xyz/submit" method="post">
+                    <label for="">Nome</label>
+                    <input type="text" nome="name" placeholder="Digite seu nome" autocomplete="off">
+                    <label for="">E-mail</label>
+                    <input type="email" name="email" placeholder="Digite se E-mail" autocomplete="off">
+                    <label for="">Messagem</label>
+                    <textarea name="message"  cols="30" rows="10" placeholder="Digite sua messagem"> </textarea>
+                    <button type="submit">Enviar</button>
+                    <input type="hidden" name="accessKey" value="29cb2464-1e88-48c9-a397-964b06b19673">
+                    <input type="hidden" name="redirectTo" value="http://localhost:3333/">
+                </form>
+            </div>
+            </div>
         <p class="credit">Desenvolvido por <strong>DH Geek &bull; <span id="year"></span></strong><br>
             <a href="https://www.linkedin.com/in/danilobatista/" target="_blank">Danilo
                 Batista</a> |
             <a href="#" target="_blank">Renan Costa</a> |
             <a href="https://www.linkedin.com/in/aliomar-lopes-neto/" target="_blank">Aliomar Lopes Neto</a> |
-            <a href="#" target="_blank">Anne Carine Bien Aime</a>
+            <a href="https://github.com/Annefedy" target="_blank">Anne Carine Bien Aime</a>
         </p>
     </footer>
     <script src="/public/scripts/app.js"></script>
