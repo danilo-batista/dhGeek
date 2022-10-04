@@ -519,22 +519,23 @@
                         <link href="#">Login
                     </li>
                 </ul>
+                <hr>
+                <div>
+                    <form class="contact-info__form" action="https://api.staticforms.xyz/submit" method="POST">
+                        <h3>Fale conosco</h3>
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email">
+                        <label for="message">Deixe sua mensagem</label>
+                        <textarea name="message" cols="30" rows="10" placeholder="Digite sua messagem"> </textarea>
+                        <button type="submit">Enviar</button>
+                        <input type="hidden" name="accessKey" value="29cb2464-1e88-48c9-a397-964b06b19673">
+                        <input type="hidden" name="redirectTo" value="http://localhost:3333/">
+                    </form>
+                </div>
             </div>
-            <hr>
-            <div>
-                <form class="contact-info__form" action="https://api.staticforms.xyz/submit" method="POST">
-                    <h3>Fale conosco</h3>
-                    <label for="name">Nome</label>
-                    <input type="text" name="name" id="name">
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email">
-                    <label for="message">Deixe sua mensagem</label>
-                    <textarea name="message" cols="30" rows="10" placeholder="Digite sua messagem"> </textarea>
-                    <button type="submit">Enviar</button>
-                    <input type="hidden" name="accessKey" value="29cb2464-1e88-48c9-a397-964b06b19673">
-                    <input type="hidden" name="redirectTo" value="http://localhost:3333/">
-                </form>
-            </div>
+
             <div class="contact-info__copyright">
                 <p class="contact-info__copyright--message">© Disney © Disney•Pixar © & ™ Lucasfilm LTD © <span
                         id="year"></span> MARVEL. Reservados todos os
@@ -542,8 +543,6 @@
             </div>
         </section>
     </main>
-
-
 
     <footer class="copyright">
         <div class="copyright--software-house">
