@@ -6,86 +6,192 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/public/styles/reset.css">
-    <link rel="stylesheet" href="/public/styles/normalize.css">
-    <link rel="stylesheet" href="/public/styles/main.css">
-    <link rel="stylesheet" href="/public/styles/main-banner.css">
-    <link rel="stylesheet" href="/public/styles/footer.css">
-    <link rel="stylesheet" href="/public/styles/style.css">
-    <link rel="stylesheet" href="/public/styles/header.css">
-    <link rel="stylesheet" href="/public/styles/login.css">
+    <link rel="stylesheet" href="/public/styles/base/reset.css">
+    <link rel="stylesheet" href="/public/styles/base/normalize.css">
+    <link rel="stylesheet" href="/public/styles/base/variables.css">
 
-    <title>Disney Shop</title>
+    <link rel="stylesheet" href="/public/styles/partials/header.css">
+    <link rel="stylesheet" href="/public/styles/partials/main-banner.css">
+    <link rel="stylesheet" href="/public/styles/user/login.css">
+    <link rel="stylesheet" href="/public/styles/partials/payment-security.css">
+    <link rel="stylesheet" href="/public/styles/partials/contact-info.css">
+    <link rel="stylesheet" href="/public/styles/partials/footer.css">
+
+    <title>Bem-vindo! | Disney Brasil</title>
 </head>
 
 <body>
     <header>
-        <img class="logo" src="/public/images/disney-logo.svg" alt="logo">
-		<ul class="nav-bar">
-			<li><link href="#">Clássicos</li>
-			<li><link href="#">Marvel</li>
-			<li><link href="#">Princesas</li>
-			<li><link href="#">Star Wars</li>
-		</ul>
-			<button class="login-button" type="submit">Login</button>
-			<button class="hamburguer-menu" type="submit"><img src="/public/images/menu.svg" alt="menu"></button>
-		<div class="busca">
-				<input type="text" placeholder="O que deseja encontrar ?">
-				<button><img src="/public/images/lupa.svg"></button>
-			</div>
-    </header>
-    <main>
-    <section>
-        <div class="main-login">
-            <h2>Entrar</h2>
-            <div class="main-login__form">
-                <form method="post">
-                <label>E-mail *
-                   <input type="email" name="email" id="email">
-                </label>
-                <label>Senha *
-                    <input type="password" name="password" id="password">
-                 </label>
-                <div>
-                    <div>
-                <label id="checkbox">Lembre-me
-                    <input type="checkbox" name="remember" id="remember">
-                </label>
-                    <a id="tag-all" href="#">Perdeu sua senha?</a>
-                    </div>
-                      <a id="tag-tablet" href="#">Perdeu sua senha?</a>
-                      <button>Acessar</button>
-                </div>
-                </form>
-            </div>
+        <img class="logo" src="/public/images/brands/disney-logo.svg" alt="logo">
+        <ul class="nav-bar">
+            <li>
+                <link href="#">Clássicos
+            </li>
+            <li>
+                <link href="#">Marvel
+            </li>
+            <li>
+                <link href="#">Princesas
+            </li>
+            <li>
+                <link href="#">Star Wars
+            </li>
+        </ul>
+        <button class="login-button" type="submit">Login</button>
+        <button class="hamburguer-menu" type="submit"><img src="/public/images/menu.svg" alt="menu"></button>
+        <div class="busca">
+            <input type="text" placeholder="O que deseja encontrar ?">
+            <button><img src="/public/images/lupa.svg" alt="lupa"></button>
         </div>
-        <div class="main-login">
-            <h2>Cadastrar</h2>
-            <div class="main-login__form">
-                <form method="post">
-                <label>E-mail *
-                   <input type="email" name="email" id="email">
-                </label>
-                <label>Senha *
-                    <input type="password" name="password" id="password">
-                 </label>
-        
-                <div id="div-register">
-                    <p>Seus dados pessoais serão usados para aprimorar a sua experiência em todo este site, para gerenciar o acesso a sua conta e para outros propósitos, como descritos em nossa política de privacidade</p>
-                
-                <div id="div-button-register">
-                <button id="button-register">Cadastrar</button>
+    </header>
+
+    <main>
+        <section>
+            <div class="main-login">
+                <h2>Entrar</h2>
+                <div class="main-login__form">
+                    <form method="post">
+                        <label>E-mail *
+                            <input type="email" name="email" id="email">
+                        </label>
+                        <label>Senha *
+                            <input type="password" name="password" id="password">
+                        </label>
+                        <div>
+                            <div>
+                                <label id="checkbox">Lembre-me
+                                    <input type="checkbox" name="remember" id="remember">
+                                </label>
+                                <a id="tag-all" href="#">Perdeu sua senha?</a>
+                            </div>
+                            <a id="tag-tablet" href="#">Perdeu sua senha?</a>
+                            <button>Acessar</button>
+                        </div>
+                    </form>
                 </div>
+            </div>
+            <div class="main-login">
+                <h2>Cadastrar</h2>
+                <div class="main-login__form">
+                    <form method="post">
+                        <label>E-mail *
+                            <input type="email" name="email" id="email">
+                        </label>
+                        <label>Senha *
+                            <input type="password" name="password" id="password">
+                        </label>
+
+                        <div id="div-register">
+                            <p>Seus dados pessoais serão usados para aprimorar a sua experiência em todo este site, para
+                                gerenciar o acesso a sua conta e para outros propósitos, como descritos em nossa
+                                política de privacidade</p>
+
+                            <div id="div-button-register">
+                                <button id="button-register">Cadastrar</button>
+                            </div>
+                        </div>
+
+                    </form>
+
                 </div>
-            
-                </form>
-                
+
+            </div>
+        </section>
+        <section class="main-footer">
+            <fieldset class="payments">
+                <legend class="payments__title">Formas de pagamento</legend>
+                <div class="payments__methods">
+                    <!-- <div class="payments__methods--brands"> -->
+                    <img src="/public/images/brands/koin.webp" alt="Logotipo Koin.">
+                    <img src="/public/images/brands/pix.svg" alt="Logotipo Pix.">
+                    <!-- </div> -->
+                    <!-- <div class="payments__methods--brands"> -->
+                    <img src="/public/images/brands/mastercard.svg" alt="Logotipo Mastercard.">
+                    <img src="/public/images/brands/boleto.svg" alt="Logotipo Boleto.">
+                    <img src="/public/images/brands/visa.svg" alt="Logotipo Visa.">
+                    <!-- </div> -->
+                    <!-- <div class="payments__methods--brands"> -->
+                    <img src="/public/images/brands/ebanxpay.svg" alt="Logotipo EbanxPay.">
+                    <img src="/public/images/brands/paypal.svg" alt="Logotipo PayPal.">
+                    <!-- </div> -->
+                    <!-- <div class="payments__methods--brands"> -->
+                    <img src="/public/images/brands/picpay.svg" alt="Logotipo PicPay.">
+                    <img src="/public/images/brands/american-express.svg" alt="Logotipo American Express.">
+                    <img src="/public/images/brands/elo.svg" alt="Logotipo Elo.">
+                    <!-- </div> -->
+                    <!-- <div class="payments__methods--brands"> -->
+                    <img src="/public/images/brands/ame-digital.svg" alt="Logotipo Ame.">
+                    <img src="/public/images/brands/diners.svg" alt="Logotipo Diners.">
+                    <!-- </div> -->
+                </div>
+            </fieldset>
+            <fieldset class="security">
+                <legend class="security__title">Segurança e Qualidade</legend>
+                <div class="security_methods">
+                    <div class="security_methods--brands">
+                        <img src="/public/images/brands/google-safe-browsing.svg" alt="Logotipo Google Safe Browsing.">
+                    </div>
+                </div>
+            </fieldset>
+        </section>
+        <section class="contact-info">
+            <div class="contact-info__menu">
+                <img class="contact-info__menu--brand" src="/public/images/brands/disney-logo.svg" alt="logo">
+                <ul>
+                    <li>
+                        <link href="#">Clássicos
+                    </li>
+                    <li>
+                        <link href="#">Marvel
+                    </li>
+                    <li>
+                        <link href="#">Princesas
+                    </li>
+                    <li>
+                        <link href="#">Star Wars
+                    </li>
+                    <li>
+                        <link href="#">Login
+                    </li>
+                </ul>
+                <hr>
+                <div>
+                    <form class="contact-info__form" action="https://api.staticforms.xyz/submit" method="POST">
+                        <h3>Fale conosco</h3>
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email">
+                        <label for="message">Deixe sua mensagem</label>
+                        <textarea name="message" cols="30" rows="10" placeholder="Digite sua messagem"> </textarea>
+                        <button type="submit">Enviar</button>
+                        <input type="hidden" name="accessKey" value="29cb2464-1e88-48c9-a397-964b06b19673">
+                        <input type="hidden" name="redirectTo" value="http://localhost:3333/">
+                    </form>
+                </div>
             </div>
 
-        </div>
-    </section>
- 
+            <div class="contact-info__copyright">
+                <p class="contact-info__copyright--message">© Disney © Disney•Pixar © & ™ Lucasfilm LTD © <span
+                        id="year"></span> MARVEL. Reservados todos os
+                    direitos, Disney Entertainment</p>
+            </div>
+        </section>
     </main>
 
+    <footer class="copyright">
+        <div class="copyright--software-house">
+            <p>Desenvolvido por <strong>DH Geek | <span id="year"></span></strong></p>
+        </div>
+        <div class="copyright--authors">
+            <a href="https://www.linkedin.com/in/danilobatista/" target="_blank">Danilo Batista</a> |
+            <a href="https://github.com/RenanppCosta" target="_blank">Renan Costa</a> |
+            <a href="https://www.linkedin.com/in/aliomar-lopes-neto/" target="_blank">Aliomar Lopes Neto</a> |
+            <a href="https://github.com/Annefedy" target="_blank">Anne Carine Bien Aime</a>
+        </div>
+    </footer>
+
+    <script src="/public/scripts/app.js"></script>
 </body>
+
 </html>

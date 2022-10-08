@@ -1,12 +1,5 @@
-/* ---------- general ---------- */
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
-
 .products {
-  margin: 0;
-  padding: 0;
   font-family: 'Raleway', sans-serif;
-  box-sizing: border-box;
   min-width: 100%;
 }
 
@@ -19,11 +12,10 @@
 }
 
 .products__header__title {
-  font-style: normal;
   font-weight: 700;
   font-size: 2rem;
   margin: 0.2rem;
-  color: #464646;
+  color: var(--disney-darkgray);
 }
 
 .products__ver-mais-container {
@@ -34,7 +26,7 @@
 }
 
 .products__ver-mais-container__link--styled {
-  color: #BBBBBB;
+  color: var(--disney-mediumgray);
   font-weight: 700;
   text-decoration: inherit;
   border: 2px solid transparent;
@@ -42,11 +34,13 @@
 }
 
 .products__ver-mais-container__link--styled:hover {
-  border-bottom: 2px solid #BBBBBB;
+  border-bottom: 2px solid var(--disney-mediumgray);
 }
 
 .products__ver-mais-container__arrow {
   margin-left: 0.6rem;
+  width: 1rem;
+  height: 1rem;
 }
 
 .products-flex {
@@ -63,7 +57,7 @@
   align-items: center;
   width: 9rem;
   height: 18rem;
-  background-color: #F5F5F5;
+  background-color: var(--disney-lightgray);
   border-radius: 8px;
   cursor: pointer;
 }
@@ -72,8 +66,8 @@
   transition: all 0.2s ease-out;
   box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
   top: -4px;
-  border: 1px solid #cccccc;
-  background-color: white;
+  border: 1px solid var(--disney-lightgray);
+  background-color: var(--disney-white);
 }
 
 .products-flex__item--600w {
@@ -88,7 +82,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: var(--disney-white);
   width: 7rem;
   height: 7rem;
   margin-top: 1rem;
@@ -102,11 +96,10 @@
 }
 
 .products__link--styled {
-  color: #BBBBBB;
-  font-style: normal;
+  color: var(--disney-lightgray);
   font-weight: 500;
   text-decoration: inherit;
-  color: #464646;
+  color: var(--disney-darkgray);
   padding: 0.6rem;
   text-align: left;
   cursor: pointer;
@@ -117,11 +110,13 @@
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
-  color: #464646;
+  color: var(--disney-darkgray);
+  text-align: left;
 }
 
 .products__price_conditions--styled {
-  color: #BBBBBB;
+  color: var(--disney-mediumgray);
+  text-align: left;
   margin: 0;
   margin-bottom: 0.5rem;
 }
@@ -136,7 +131,7 @@
     align-items: center;
     width: 9rem;
     height: 18rem;
-    background-color: #F5F5F5;
+    background-color: var(--disney-lightgray);
     border-radius: 8px;
     cursor: pointer;
   }
@@ -145,8 +140,8 @@
     transition: all 0.2s ease-out;
     box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
     top: -4px;
-    border: 1px solid #cccccc;
-    background-color: white;
+    border: 1px solid var(--disney-lightgray);
+    background-color: var(--disney-white);
   }
 }
 
@@ -160,7 +155,7 @@
     align-items: center;
     width: 9rem;
     height: 18rem;
-    background-color: #F5F5F5;
+    background-color: var(--disney-lightgray);
     border-radius: 8px;
     cursor: pointer;
   }
@@ -169,14 +164,14 @@
     transition: all 0.2s ease-out;
     box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
     top: -4px;
-    border: 1px solid #cccccc;
-    background-color: white;
+    border: 1px solid var(--disney-lightgray);
+    background-color: var(--disney-white);
   }
 }
 
 /* ---------- 100px ---------- */
 
-@media (min-width: 1100px) {
+@media (min-width: 1048px) {
   .products__header {
     display: flex;
     justify-content: center;
