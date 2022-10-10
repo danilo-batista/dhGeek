@@ -11,6 +11,18 @@ app.get("/", (request, response) => {
     return response.sendFile(path.join(dirname, "src/views/index.html"));
 });
 
+app.get("/login", (request, response) => {
+    return response.sendFile(path.join(dirname, "src/views/login.html"));
+});
+
+app.get("/register", (request, response) => {
+    return response.sendFile(path.join(dirname, "src/views/register.html"));
+});
+
+app.get("/item", (request, response) => {
+    return response.sendFile(path.join(dirname, "src/views/item.html"));
+});
+
 app.listen(3333, () => {
     console.log("Server is running at port 3333...");
 });
