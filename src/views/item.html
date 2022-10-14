@@ -23,28 +23,50 @@
 
 <body>
   <header>
-    <img class="logo" src="/public/images/brands/disney-logo.svg" alt="logo">
-    <ul class="nav-bar">
-      <li>
-        <link href="#">Clássicos
-      </li>
-      <li>
-        <link href="#">Marvel
-      </li>
-      <li>
-        <link href="#">Princesas
-      </li>
-      <li>
-        <link href="#">Star Wars
-      </li>
-    </ul>
-    <button class="login-button" type="submit">Login</button>
-    <button class="hamburguer-menu" type="submit"><img src="/public/images/menu.svg" alt="menu"></button>
-    <div class="busca">
-      <input type="text" placeholder="O que deseja encontrar ?">
-      <button><img src="/public/images/lupa.svg" alt="lupa"></button>
-    </div>
-  </header>
+        <button class="hamburguer-menu" type="submit"><img src="/public/images/menu.svg" alt="menu"></button>
+        <button class="close-menu" type="submit"><img src="/public/images/close-menu.svg" alt="close-menu"></button>
+        <ul class="nav-bar">
+            <li>
+                <a href="#">Clássicos</a>
+            </l1>
+            <li>
+                <a href="#">Marvel</a>
+            </li>
+            <li>
+                <a href="#">Princesas</a>
+            </li>
+            <li>
+                <a href="#">Star Wars</a>
+            </li>
+        </ul>
+        <button class="login-button" type="submit">Login</button>
+        <img class="logo" src="/public/images/brands/disney-logo.svg" alt="logo">
+        <button class="cart-button" type="submit"><img src="/public/images/cart-icon.svg" alt="shopping-cart"></button>
+        
+        <div class="busca">
+            <input type="text" placeholder="O que deseja encontrar ?">
+            <button><img src="/public/images/lupa.svg" alt="lupa"></button>
+        </div>
+        <div id="sidebar-menu">
+            <button>Login</button>
+            <div class="separated-color__menu"></div>
+            <ul>
+               <li><a href="#anuncios">Home</a></li>
+               <li><a href="#styles">Clássicos</a></li>
+               <li><a href="#contact">Marvel</a></li>
+               <li><a href="#contact">Princesas</a></li>
+               <li><a href="#contact">Star Wars</a></li>
+            </ul>
+            <div class="separated-color__menu"></div>
+            <ul>
+                <li><a href="#anuncios">Minha Conta</a></li>
+                <li><a href="#styles">Lista de desejos</a></li>
+                <li><a href="#contact">Meu carrinho</a></li>
+            </ul>
+            <div class="separated-color__menu"></div>
+            <a href="#">Fechar</a>
+        </div>
+    </header>
   <main>
     <section class="item">
       <header class="item__header">
@@ -429,6 +451,7 @@
     </div>
   </footer>
   <script src="/public/scripts/app.js"></script>
+  <script src="/public/scripts/menu.js"></script>
 </body>
 
 </html>
