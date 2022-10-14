@@ -1,9 +1,9 @@
 const express = require("express");
 const path = require("path");
 
-const mainRoutes = require("./routes/MainRoutes");
-const productRoutes = require("./routes/ProductRoutes");
-const userRoutes = require("./routes/UserRoutes");
+const mainRoutes = require("./routes/mainRoutes");
+const productRoutes = require("./routes/productRoutes");
+const userRoutes = require("./routes/userRoutes");
 
 const app = express();
 const dirname = path.resolve();
