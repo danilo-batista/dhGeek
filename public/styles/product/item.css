@@ -34,6 +34,7 @@ body {
   align-self: center;
   width: 95vw;
   max-height: 20vh;
+  margin-top: 20px;
 }
 
 .hero--image {
@@ -338,7 +339,8 @@ body {
 
 .showcase__more-products {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
