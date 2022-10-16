@@ -13,88 +13,108 @@
     <link rel="stylesheet" href="/public/styles/partials/header.css">
     <link rel="stylesheet" href="/public/styles/partials/main-banner.css">
     <link rel="stylesheet" href="/public/styles/user/login.css">
+    <link rel="stylesheet" href="/public/styles/user/register.css">
     <link rel="stylesheet" href="/public/styles/partials/payment-security.css">
     <link rel="stylesheet" href="/public/styles/partials/contact-info.css">
     <link rel="stylesheet" href="/public/styles/partials/footer.css">
 
-    <title>Bem-vindo! | Disney Brasil</title>
+    <title>Registre-se | Disney Brasil</title>
 </head>
 
 <body>
     <header>
-        <img class="logo" src="/public/images/brands/disney-logo.svg" alt="logo">
+        <button class="hamburguer-menu" type="submit"><img src="/public/images/menu.svg" alt="menu"></button>
+        <button class="close-menu" type="submit"><img src="/public/images/close-menu.svg" alt="close-menu"></button>
         <ul class="nav-bar">
             <li>
-                <link href="#">Clássicos
+                <a href="#">Clássicos</a>
+            </l1>
+            <li>
+                <a href="#">Marvel</a>
             </li>
             <li>
-                <link href="#">Marvel
+                <a href="#">Princesas</a>
             </li>
             <li>
-                <link href="#">Princesas
-            </li>
-            <li>
-                <link href="#">Star Wars
+                <a href="#">Star Wars</a>
             </li>
         </ul>
         <button class="login-button" type="submit">Login</button>
-        <button class="hamburguer-menu" type="submit"><img src="/public/images/menu.svg" alt="menu"></button>
+        <img class="logo" src="/public/images/brands/disney-logo.svg" alt="logo">
+        <button class="cart-button" type="submit"><img src="/public/images/cart-icon.svg" alt="shopping-cart"></button>
+        
         <div class="busca">
             <input type="text" placeholder="O que deseja encontrar ?">
             <button><img src="/public/images/lupa.svg" alt="lupa"></button>
         </div>
+        <div id="sidebar-menu">
+            <button>Login</button>
+            <div class="separated-color__menu"></div>
+            <ul>
+               <li><a href="#anuncios">Home</a></li>
+               <li><a href="#styles">Clássicos</a></li>
+               <li><a href="#contact">Marvel</a></li>
+               <li><a href="#contact">Princesas</a></li>
+               <li><a href="#contact">Star Wars</a></li>
+            </ul>
+            <div class="separated-color__menu"></div>
+            <ul>
+                <li><a href="#anuncios">Minha Conta</a></li>
+                <li><a href="#styles">Lista de desejos</a></li>
+                <li><a href="#contact">Meu carrinho</a></li>
+            </ul>
+            <div class="separated-color__menu"></div>
+            <a href="#">Fechar</a>
+        </div>
     </header>
-
     <main>
         <section>
             <div class="main-login">
-                <h2>Entrar</h2>
+                <h2>Crie Sua conta</h2>
                 <div class="main-login__form">
                     <form method="post">
-                        <label>E-mail *
-                            <input type="email" name="email" id="email">
-                        </label>
-                        <label>Senha *
-                            <input type="password" name="password" id="password">
-                        </label>
-                        <div>
-                            <div>
-                                <label id="checkbox">Lembre-me
-                                    <input type="checkbox" name="remember" id="remember">
+                        <div class="first-div__form">
+                            <label>Primeiro Nome*
+                                <input type="text" name="first-name" id="first-name">
+                            </label>
+                            <label>Sobrenome*
+                                <input type="text" name="last-name" id="last-name">
+                            </label>
+                            <label>Data de Nascimento*
+                                <input type="date" name="date" id="date">
+                            </label>
+                        </div>
+                        <div class="separated-color"></div>
+                        <div id="second-div__form">
+                            <div id="second-div__form-first-div">
+                                <label>E-mail*
+                                    <input type="email" name="email" id="email">
                                 </label>
-                                <a id="tag-all" href="#">Perdeu sua senha?</a>
+                                <label>Senha*
+                                    <input type="password" name="password" id="password">
+                                </label>
+                                <label>Confirme sua Senha*
+                                    <input type="password" name="confirm-password" id="confirm-password">
+                                </label>
                             </div>
-                            <a id="tag-tablet" href="#">Perdeu sua senha?</a>
-                            <button>Acessar</button>
+                            <div id="second-div__form-second-div">
+                                <div id="terms">
+                                    <p>Ao criar uma conta, você concorda com os <strong>Termos de Uso</strong> e com
+                                        a
+                                        <strong>Política de Privacidade.</strong>
+                                    </p>
+                                    <div>
+                                        <input type="checkbox" name="accept" id="accept">
+                                        <label id="label-checkbox">Sim! Gostaria de receber atualizações e promoções
+                                            especiais da DisneyShop.</label>
+                                    </div>
+                                </div>
+                                <button>Criar minha conta</button>
+                            </div>
                         </div>
                     </form>
                 </div>
-            </div>
-            <div class="main-login">
-                <h2>Cadastrar</h2>
-                <div class="main-login__form">
-                    <form method="post">
-                        <label>E-mail *
-                            <input type="email" name="email" id="email">
-                        </label>
-                        <label>Senha *
-                            <input type="password" name="password" id="password">
-                        </label>
-
-                        <div id="div-register">
-                            <p>Seus dados pessoais serão usados para aprimorar a sua experiência em todo este site, para
-                                gerenciar o acesso a sua conta e para outros propósitos, como descritos em nossa
-                                política de privacidade</p>
-
-                            <div id="div-button-register">
-                                <button id="button-register">Cadastrar</button>
-                            </div>
-                        </div>
-
-                    </form>
-
-                </div>
-
+                <a href="#">Já possui uma conta? Faça o <strong>Login.</strong></a>
             </div>
         </section>
         <section class="main-footer">
@@ -178,7 +198,6 @@
             </div>
         </section>
     </main>
-
     <footer class="copyright">
         <div class="copyright--software-house">
             <p>Desenvolvido por <strong>DH Geek | <span id="year"></span></strong></p>
@@ -190,8 +209,8 @@
             <a href="https://github.com/Annefedy" target="_blank">Anne Carine Bien Aime</a>
         </div>
     </footer>
-
     <script src="/public/scripts/app.js"></script>
+    <script src="/public/scripts/menu.js"></script>
 </body>
 
 </html>
