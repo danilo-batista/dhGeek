@@ -4,9 +4,8 @@
     flex-wrap: wrap;
     padding: 10px;
     margin-top: 1.5rem;
-    width: 100%;
+    width: 95vw;
     justify-content: center;
-    align-items: center;
 
     background-color: var(--disney-lightgray);
     font-family: "Roboto", sans-serif;

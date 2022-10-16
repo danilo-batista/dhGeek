@@ -2,105 +2,114 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
 
-* {
-  box-sizing: border-box;
+body {
   font-family: 'Raleway', sans-serif;
-  text-align: center;
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-self: center;
-}
+/* ---------- mobile first ---------- */
 
 .main {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
-  align-self: center;
-  text-align: center;
-  width: 95vw;
-  gap: 10px;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  width: 100vw;
+  background-color: white;
+  border: 2px solid black;
+  justify-content: center;
 }
 
 .hero {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-self: center;
-  width: 95vw;
-  max-height: 20vh;
+  align-items: center;
 }
 
-.hero--image {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
+.hero__banner {
+  height: 4rem;
+  background: url("/public/images/banners-ads/anuncio.png");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
   border-radius: 8px;
-  width: 95vw;
-  max-height: 20vh;
   object-fit: cover;
 }
 
 .item {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  align-content: center;
 }
 
 .path {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.path--text {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   color: #BBBBBB;
-  text-align: start;
-  position: -webkit-sticky;
 }
 
 .item__gallery {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  width: 18rem;
   gap: 10px;
 }
 
 .item__gallery__main {
   display: flex;
-  flex-direction: column; 
-}
-
-.item__gallery__main--image {
+  flex-direction: column;
   border: 1px solid #BBBBBB;
   border-radius: 8px;
-  width: 18rem;
-  gap: 10px;
+  background: url("/public/images/starwars/estatua-the-child-baby-yoda-mandalorian-2x.webp");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  width: 16rem;
+  height: 20rem;
 }
 
 .item__gallery__mini {
   display: flex;
   justify-content: center;
-  align-items: center;
+  width: 16rem;
   gap: 10px;
-  width: 18rem;
 }
 
-.item__gallery__mini-card {
+.item__gallery__mini--box {
   display: flex;
-}
-
-.item__gallery__mini-card--image {
   border: 1px solid #BBBBBB;
   border-radius: 8px;
-  width: 5.6rem;
-  height: 5.6rem;
+  background: url("/public/images/starwars/estatua-the-child-baby-yoda-mandalorian-image2-2x.webp");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  width: 6rem;
+  height: 5rem;
+}
+
+.sheet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .item__data {
@@ -108,7 +117,7 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   text-align: left;
 }
@@ -126,7 +135,6 @@ body {
   color: #FFFFFF;
   text-align: center;
   padding: 5px;
-  align-self: flex-start;
 }
 
 .item__data--name {
@@ -135,8 +143,6 @@ body {
   font-size: 20px;
   line-height: 23px;
   color: #464646;
-  text-align: start;
-  align-self: flex-start;
 }
 
 .item__data--old-price {
@@ -145,8 +151,6 @@ body {
   line-height: 19px;
   text-decoration-line: line-through;
   color: #BBBBBB;
-  text-align: start;
-  align-self: flex-start;
 }
 
 .item__data--price {
@@ -156,8 +160,6 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: #464646;
-  text-align: start;
-  align-self: flex-start;
 }
 
 .item__data--payment-conditions {
@@ -166,8 +168,6 @@ body {
   font-size: 14px;
   line-height: 16px;
   color: #BBBBBB;
-  text-align: start;
-  align-self: flex-start;
 }
 
 .item__shipping {
@@ -179,7 +179,7 @@ body {
 }
 
 .item__shipping--break {
-  width: 95vw;
+  width: 90%;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   color: #BBBBBB;
@@ -301,39 +301,11 @@ body {
   margin-bottom: 2rem;
 }
 
-.description {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.description__title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  color: #464646;
-  margin: 0;
-  text-align: start;
-  margin-bottom: 10px;
-}
-
-.description__text {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #464646;
-  text-align: left;
-}
-
 .showcase {
   display: flex;
   justify-content: center;
-  align-items: center;
   background-color: #D9D9D9;
-  align-self: center;
   width: 100vw;
-  padding-top: 1rem;
 }
 
 .showcase__more-products {
@@ -353,79 +325,62 @@ body {
   padding: 13px 0 31px 0;
 }
 
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.description__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #464646;
+}
+
+.description__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #464646;
+
+}
+
+.footer {
+  display: flex;
+  width: 100vw;
+  
+  background-color: white;
+  border: 2px solid black;
+  justify-content: center;
+}
+
 /* ---------- 600px ---------- */
 
 @media (min-width: 600px) {
-  .item {
+  .item {  
     flex-direction: row;
-    justify-content: center;
-    gap: 10px;
   }
 
-  .item__shipping__form__cep--box {
-    width: 12rem;
+  .item__gallery { 
+    
   }
 
-  .item__shipping--break {
-    width: 16rem;
+  .item__data { 
+    
   }
-}
 
-/* ---------- 768px ---------- */
-
-@media (min-width: 768px) {
-  .item__shipping__form__cep--box {
-    width: 16rem;
+  .item__shipping { 
+    
   }
 
   .item__shipping--break {
-    width: 20rem;
+    
   }
 
-  .item__buying__buttons {
-    flex-direction: row-reverse;
-  }
-
-  .item__buying--buy-button {
-    width: 11rem;
-  }
-  
-  .item__buying--cart-button {
-    width: 11rem;
-  }
-
-}
-
-@media (min-width: 860px) {
-  .main {
-    width: 860px;
-  }
-
-  .item {
-    width: 860px;
-  }
-}
-
-/* ---------- 1000px ---------- */
-
-@media (min-width: 1000px) {
-  .item {
-    gap: 30px;
-  }
-
-  .item__shipping__form__cep--box {
-    width: 14rem;
-  }
-
-  .item__shipping--break {
-    width: 37rem;
-  }
-
-  .item__buying--buy-button {
-    width: 14rem;
-  }
-  
-  .item__buying--cart-button {
-    width: 14rem;
+  .item__buying { 
+    
   }
 }
