@@ -11,10 +11,7 @@
     <link rel="stylesheet" href="/public/styles/partials/header.css" />
     <link rel="stylesheet" href="/public/styles/home/products.css" />
     <link rel="stylesheet" href="/public/styles/product/item.css" />
-    <link
-      rel="stylesheet"
-      href="/public/styles/partials/payment-security.css"
-    />
+    <link rel="stylesheet" href="/public/styles/partials/payment-security.css" />
     <link rel="stylesheet" href="/public/styles/partials/contact-info.css" />
     <link rel="stylesheet" href="/public/styles/partials/footer.css" />
     <title>Disney Brasil | Produto</title>
@@ -51,107 +48,105 @@
       </section>
       <p class="path">Home > Todos os produtos > Categoria > Nome-do-Produto</p>
       <section class="item">
-        <div class="item__gallery">
-          <div class="item__gallery__main">
-            <img
-              class="item__gallery__main--image"
-              src="/public/images/starwars/estatua-the-child-baby-yoda-mandalorian-2x.webp"
-              alt=""
-            />
-          </div>
-          <div class="item__gallery__mini">
-            <div class="item__gallery__mini-card">
+        <% for (let product of productList) { %>
+          <div class="item__gallery">
+            <div class="item__gallery__main">
               <img
-                class="item__gallery__mini-card--image"
-                src="/public/images/starwars/estatua-the-child-baby-yoda-mandalorian.webp"
-                alt="estatua-the-child-baby-yoda-mandalorian"
+                class="item__gallery__main--image"
+                src="/public/images/starwars/estatua-the-child-baby-yoda-mandalorian-2x.webp"
+                alt=""
               />
             </div>
-            <div class="item__gallery__mini-card">
-              <img
-                class="item__gallery__mini-card--image"
-                src="/public/images/starwars/estatua-the-child-baby-yoda-mandalorian.webp"
-                alt="estatua-the-child-baby-yoda-mandalorian"
-              />
-            </div>
-            <div class="item__gallery__mini-card">
-              <img
-                class="item__gallery__mini-card--image"
-                src="/public/images/starwars/estatua-the-child-baby-yoda-mandalorian.webp"
-                alt="estatua-the-child-baby-yoda-mandalorian"
-              />
+            <div class="item__gallery__mini">
+              <div class="item__gallery__mini-card">
+                <img
+                  class="item__gallery__mini-card--image"
+                  src="/public/images/starwars/estatua-the-child-baby-yoda-mandalorian.webp"
+                  alt="estatua-the-child-baby-yoda-mandalorian"
+                />
+              </div>
+              <div class="item__gallery__mini-card">
+                <img
+                  class="item__gallery__mini-card--image"
+                  src="/public/images/starwars/estatua-the-child-baby-yoda-mandalorian.webp"
+                  alt="estatua-the-child-baby-yoda-mandalorian"
+                />
+              </div>
+              <div class="item__gallery__mini-card">
+                <img
+                  class="item__gallery__mini-card--image"
+                  src="/public/images/starwars/estatua-the-child-baby-yoda-mandalorian.webp"
+                  alt="estatua-the-child-baby-yoda-mandalorian"
+                />
+              </div>
             </div>
           </div>
-        </div>
-        <div class="item__data">
-          <p class="item__data--off">35% OFF</p>
-          <p class="item__data--name">
-            Estátua The Child na cadeira | Baby Yoda Mandalorian
-          </p>
-          <p class="item__data--old-price">R$ 3.000,00</p>
-          <p class="item__data--price">R$ 3.000,00</p>
-          <p class="item__data--payment-conditions">
-            ou 12x sem juros de R$ 250,00
-          </p>
-          <div class="item__data__shipping">
-            <hr class="item__shipping--break" />
-            <p class="item__shipping--title">
-              Consultar prazo e valor do frete:
-            </p>
-            <form action="" class="item__shipping__form">
-              <input
-                name="CEP"
-                type="text"
-                class="item__shipping__form__cep--box"
-                id="cepBox"
-              />
-              <input
-                name="CEP"
-                type="submit"
-                class="item__shipping__form__cep--button"
-                id="cepButton"
-                value="Buscar"
-              />
-            </form>
-            <a class="item__shipping--nocep" href="#" target="_blank"
-              >Não sei meu CEP</a
-            >
-            <hr class="item__shipping--break" />
-          </div>
-          <div class="item__data__buying">
-            <div class="item__buying__quantity">
-              <label for="quantity" class="item__buying__quantity--label"
-                >Quantidade</label
+          <div class="item__data">
+            <p class="item__data--off"><%=product.discount%> OFF</p>
+            <p class="item__data--name"><%=product.name%></p>
+            <p class="item__data--old-price"><=%product.oldPrice%></p>
+            <p class="item__data--price"><=%product.price%></p>
+            <p class="item__data--payment-conditions"><=%product.paymentConditions%></p>
+            <div class="item__data__shipping">
+              <hr class="item__shipping--break" />
+              <p class="item__shipping--title">
+                Consultar prazo e valor do frete:
+              </p>
+              <form action="" class="item__shipping__form">
+                <input
+                  name="CEP"
+                  type="text"
+                  class="item__shipping__form__cep--box"
+                  id="cepBox"
+                />
+                <input
+                  name="CEP"
+                  type="submit"
+                  class="item__shipping__form__cep--button"
+                  id="cepButton"
+                  value="Buscar"
+                />
+              </form>
+              <a class="item__shipping--nocep" href="#" target="_blank"
+                >Não sei meu CEP</a
               >
-              <input
-                name="quantity"
-                type="text"
-                class="item__buying__quantity-box"
-                id="quantityBox"
-                value="1"
-              />
+              <hr class="item__shipping--break" />
             </div>
-            <div class="item__buying__buttons">
-              <input
-                for="quantity"
-                type="button"
-                class="item__buying--buy-button"
-                id="buyButton"
-                value="Comprar agora"
-              />
-              <input
-                for="quantity"
-                type="button"
-                class="item__buying--cart-button"
-                id="cartButton"
-                value="Adicionar ao carrinho"
-              />
+            <div class="item__data__buying">
+              <div class="item__buying__quantity">
+                <label for="quantity" class="item__buying__quantity--label"
+                  >Quantidade</label
+                >
+                <input
+                  name="quantity"
+                  type="text"
+                  class="item__buying__quantity-box"
+                  id="quantityBox"
+                  value="1"
+                />
+              </div>
+              <div class="item__buying__buttons">
+                <input
+                  for="quantity"
+                  type="button"
+                  class="item__buying--buy-button"
+                  id="buyButton"
+                  value="Comprar agora"
+                />
+                <input
+                  for="quantity"
+                  type="button"
+                  class="item__buying--cart-button"
+                  id="cartButton"
+                  value="Adicionar ao carrinho"
+                />
+              </div>
+              <p class="item__buying--suggestion">
+                Pague com Nononon em 3x sem juros!
+              </p>
             </div>
-            <p class="item__buying--suggestion">
-              Pague com Nononon em 3x sem juros!
-            </p>
           </div>
-        </div>
+        <% } %>
       </section>
       <nav class="showcase">
         <section class="products">
@@ -531,5 +526,7 @@
         >
       </div>
     </footer>
+    <script src="/public/scripts/app.js"></script>
+    <script src="/public/scripts/menu.js"></script>
   </body>
 </html>

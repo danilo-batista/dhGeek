@@ -1,0 +1,17 @@
+[
+  {
+    "category" : "Todos os produtos",
+    "path" : "Home > Todos os produtos > Categoria > Nome-do-Produto",
+    "picture1" : "/public/images/starwars/estatua-the-child-baby-yoda-mandalorian-2x.webp",
+    "picture2" : "/public/images/starwars/estatua-the-child-baby-yoda-mandalorian-image2-2x.webp",
+    "picture3" : "/public/images/starwars/estatua-the-child-baby-yoda-mandalorian-image3-2x.webp",
+    "picture4" : "/public/images/starwars/estatua-the-child-baby-yoda-mandalorian-image4-2x.webp",
+    "name" : "estatua-the-child-baby-yoda-mandalorian-image3-2x.webp",
+    "discount" : "35%",
+    "oldPrice" : "R$ 3.000,00",
+    "price" : "R$ 3.000,00",
+    "paymentConditions" : "ou 12x sem juros  de R$ 250,00",
+    "description" : "",
+    "quantity" : "1"
+  }
+]
