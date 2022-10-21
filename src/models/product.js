@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require("path");
 
 function ProductModel(path, category, picture1, picture2, picture3, picture4, name, discount, oldPrice, price, paymentConditions, description, quantity) {
   this.category = category
@@ -17,8 +18,8 @@ function ProductModel(path, category, picture1, picture2, picture3, picture4, na
 }
 
 function getProducts() {
-  const productsList = JSON.parse(fs.readFileSync("./database/products.json", "utf-8"));
-
+  const tempPath = path.join(__dirname, "../database/products.json")
+  const productsList = JSON.parse(fs.readFileSync(tempPath, "utf-8"));
   return productsList.map
   (product => 
     new ProductModel(
