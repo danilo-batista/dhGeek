@@ -7,9 +7,4 @@ const productController = {
     },
 };
 
-function product(req, res) {
-    const productList = ProductModel.getProducts();
-    res.render("product", {productList});
-}
-
 module.exports = productController;
