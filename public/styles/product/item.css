@@ -25,7 +25,7 @@ body {
   align-content: center;
   align-self: center;
   text-align: center;
-  width: 95vw;
+  width: 100vw;
   gap: 10px;
 }
 
@@ -376,6 +376,10 @@ body {
 /* ---------- 768px ---------- */
 
 @media (min-width: 768px) {
+  .item {
+    gap: 20px;
+  }
+
   .item__shipping__form__cep--box {
     width: 16rem;
   }
@@ -386,14 +390,15 @@ body {
 
   .item__buying__buttons {
     flex-direction: row-reverse;
+    gap: 8px;
   }
 
   .item__buying--buy-button {
-    width: 11rem;
+    width: 10.5rem;
   }
   
   .item__buying--cart-button {
-    width: 11rem;
+    width: 10.5rem;
   }
 
 }
@@ -405,29 +410,5 @@ body {
 
   .item {
     width: 860px;
-  }
-}
-
-/* ---------- 1000px ---------- */
-
-@media (min-width: 1000px) {
-  .item {
-    gap: 30px;
-  }
-
-  .item__shipping__form__cep--box {
-    width: 14rem;
-  }
-
-  .item__shipping--break {
-    width: 37rem;
-  }
-
-  .item__buying--buy-button {
-    width: 14rem;
-  }
-  
-  .item__buying--cart-button {
-    width: 14rem;
   }
 }

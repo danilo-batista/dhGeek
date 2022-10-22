@@ -46,47 +46,47 @@
           alt="main-banner"
         />
       </section>
-      <p class="path">Home > Todos os produtos > Categoria > Nome-do-Produto</p>
+      <% for (let product of productsList) { %>
+      <p class="path"><=% product.path %></p>
       <section class="item">
-        <% for (let product of productsList) { %>
           <div class="item__gallery">
             <div class="item__gallery__main">
               <img
                 class="item__gallery__main--image"
-                src="/public/images/starwars/estatua-the-child-baby-yoda-mandalorian-2x.webp"
-                alt=""
+                src="<=% product.picture1 %>"
+                alt="estatua-the-child-baby-yoda-mandalorian"
               />
             </div>
             <div class="item__gallery__mini">
               <div class="item__gallery__mini-card">
                 <img
                   class="item__gallery__mini-card--image"
-                  src="/public/images/starwars/estatua-the-child-baby-yoda-mandalorian.webp"
+                  src="<=% product.picture2 %>"
                   alt="estatua-the-child-baby-yoda-mandalorian"
                 />
               </div>
               <div class="item__gallery__mini-card">
                 <img
                   class="item__gallery__mini-card--image"
-                  src="/public/images/starwars/estatua-the-child-baby-yoda-mandalorian.webp"
+                  src="<=% product.picture3 %>"
                   alt="estatua-the-child-baby-yoda-mandalorian"
                 />
               </div>
               <div class="item__gallery__mini-card">
                 <img
                   class="item__gallery__mini-card--image"
-                  src="/public/images/starwars/estatua-the-child-baby-yoda-mandalorian.webp"
+                  src="<=% product.picture4 %>"
                   alt="estatua-the-child-baby-yoda-mandalorian"
                 />
               </div>
             </div>
           </div>
           <div class="item__data">
-            <p class="item__data--off"><%=product.discount%> OFF</p>
-            <p class="item__data--name"><%=product.name%></p>
-            <p class="item__data--old-price"><=%product.oldPrice%></p>
-            <p class="item__data--price"><=%product.price%></p>
-            <p class="item__data--payment-conditions"><=%product.paymentConditions%></p>
+            <p class="item__data--off"><%= product.discount %> OFF</p>
+            <p class="item__data--name"><%= product.name %></p>
+            <p class="item__data--old-price"><=% product.oldPrice %></p>
+            <p class="item__data--price"><=% product.price %></p>
+            <p class="item__data--payment-conditions"><=% product.paymentConditions %></p>
             <div class="item__data__shipping">
               <hr class="item__shipping--break" />
               <p class="item__shipping--title">
@@ -146,7 +146,6 @@
               </p>
             </div>
           </div>
-        <% } %>
       </section>
       <nav class="showcase">
         <section class="products">
@@ -246,40 +245,9 @@
         </section>
       </nav>
       <article class="description">
-        <p class="description__title">Descrição</p>
-        <p class="description__text">
-          Prepare-se para o hiperespaço! A estrela emergente de The Mandalorian
-          no Disney Plus é definitivamente a Criança, e ela merece sua honra
-          nesta nova estátua em escala 1/2! Sentado no banco do passageiro do
-          Razor Crest, segurando seu botão de controle de prata favorito em sua
-          mão, o Child será o complemento perfeito para a coleção de qualquer fã
-          do Mandalorian. Medindo aproximadamente 30 centímetros de altura, ele
-          vem embalado em uma caixa de janela colorida e inclui um certificado
-          de autenticidade numerado. Desenhado por Joe Allard e esculpido por
-          Jorge Santos Souza. Imagem meramente ilustrativa.
-          <br /><br />
-          Fabricante: Diamond Select
-          <br />
-          Série: Star Wars
-          <br />
-          Personagem: The Child In Chair (Baby Yoda)
-          <br />
-          Material: Resina
-          <br />
-          Figura não articulada
-          <br />
-          Altura: 30 cm.
-          <br /><br />
-          Marca: Diamond Select
-          <br />
-          Peso: 5,62 kg
-          <br />
-          Largura: 25 cm
-          <br />
-          Altura: 37 cm
-          <br />
-          Profundidade: 24,5 cm
-        </p>
+        <p class="description__title"><=% product.descriptionTitle %></p>
+        <p class="description__text"><=% product.description %></p>
+      <% } %>
       </article>
       <nav class="showcase">
         <section class="products">
