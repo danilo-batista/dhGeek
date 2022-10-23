@@ -1,7 +1,7 @@
-const mainController = {
-    index: (request, response) => {
-        response.render('index');
-    }
-};
+const productModel = require("../models/product");
 
-module.exports = mainController;
+function index(request, response) {
+    const productsList = productModel.getProducts();
+    response.render('index', { productsList });
+}
+module.exports = { index }

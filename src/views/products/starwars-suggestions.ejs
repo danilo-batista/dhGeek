@@ -1,0 +1,16 @@
+<div class="products-flex__item">
+    <div class="products-flex__item__rectangle">
+        <img class="products-flex__image" src="<%= product.picture1 %>" alt="<%= product.name %> - Posição 1" />
+    </div>
+    <a class="products__link--styled" href="#">
+        <%= product.name %>
+    </a>
+    <p class="products__price--styled">
+        <%= product.price %>
+    </p>
+    <p class="products__price_conditions--styled">
+        <small>
+            <%= product.paymentsConditions %>x sem juros | R$ <%= product.paymentsValues %>
+        </small>
+    </p>
+</div>>
