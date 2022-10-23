@@ -20,36 +20,37 @@
 </head>
 
 <body>
-  <header>
-    <img class="logo" src="/public/images/brands/disney-logo.svg" alt="logo" />
-    <ul class="nav-bar">
-      <li>
-        <link href="#" />Clássicos
-      </li>
-      <li>
-        <link href="#" />Marvel
-      </li>
-      <li>
-        <link href="#" />Princesas
-      </li>
-      <li>
-        <link href="#" />Star Wars
-      </li>
-    </ul>
-    <button class="login-button" type="submit">Login</button>
-    <button class="hamburguer-menu" type="submit">
-      <img src="/public/images/menu.svg" alt="menu" />
-    </button>
-    <div class="busca">
-      <input type="text" placeholder="O que deseja encontrar ?" />
-      <button><img src="/public/images/lupa.svg" alt="lupa" /></button>
-    </div>
-  </header>
-  <main class="main">
-    <section class="hero">
-      <img class="hero--image" src="/public/images/banners-ads/anuncio.png" alt="main-banner" />
-    </section>
-    <% for (let product of productsList) { %>
+  <% for (let product of productsList) { %>
+    <header>
+      <img class="logo" src="/public/images/brands/disney-logo.svg" alt="logo" />
+      <ul class="nav-bar">
+        <li>
+          <link href="#" />Clássicos
+        </li>
+        <li>
+          <link href="#" />Marvel
+        </li>
+        <li>
+          <link href="#" />Princesas
+        </li>
+        <li>
+          <link href="#" />Star Wars
+        </li>
+      </ul>
+      <button class="login-button" type="submit">Login</button>
+      <button class="hamburguer-menu" type="submit">
+        <img src="/public/images/menu.svg" alt="menu" />
+      </button>
+      <div class="busca">
+        <input type="text" placeholder="O que deseja encontrar ?" />
+        <button><img src="/public/images/lupa.svg" alt="lupa" /></button>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <img class="hero--image" src="<%= product.productionBanner %>"
+          alt="Anúncio da nova linha de produtos da marca <%= product.disneyBrand %>" />
+      </section>
       <p class="path">
         Home > Todos os produtos > <%= product.category %> > <%= product.name %>
       </p>
@@ -359,25 +360,25 @@
           </div>
         </section>
       </section>
-  </main>
-  <footer class="copyright">
-    <div class="copyright--software-house">
-      <p>
-        Desenvolvido por <strong>DH Geek | <span id="year"></span></strong>
-      </p>
-    </div>
-    <div class="copyright--authors">
-      <a href="https://www.linkedin.com/in/danilobatista/" target="_blank">Danilo Batista</a>
-      |
-      <a href="https://github.com/RenanppCosta" target="_blank">Renan Costa</a>
-      |
-      <a href="https://www.linkedin.com/in/aliomar-lopes-neto/" target="_blank">Aliomar Lopes Neto</a>
-      |
-      <a href="https://github.com/Annefedy" target="_blank">Anne Carine Bien Aime</a>
-    </div>
-  </footer>
-  <script src="/public/scripts/app.js"></script>
-  <script src="/public/scripts/menu.js"></script>
+    </main>
+    <footer class="copyright">
+      <div class="copyright--software-house">
+        <p>
+          Desenvolvido por <strong>DH Geek | <span id="year"></span></strong>
+        </p>
+      </div>
+      <div class="copyright--authors">
+        <a href="https://www.linkedin.com/in/danilobatista/" target="_blank">Danilo Batista</a>
+        |
+        <a href="https://github.com/RenanppCosta" target="_blank">Renan Costa</a>
+        |
+        <a href="https://www.linkedin.com/in/aliomar-lopes-neto/" target="_blank">Aliomar Lopes Neto</a>
+        |
+        <a href="https://github.com/Annefedy" target="_blank">Anne Carine Bien Aime</a>
+      </div>
+    </footer>
+    <script src="/public/scripts/app.js"></script>
+    <script src="/public/scripts/menu.js"></script>
 </body>
 
 </html>

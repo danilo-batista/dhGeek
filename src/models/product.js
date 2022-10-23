@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 function Product(
-  id, slug, title, department, category, name, picture1, picture2, picture3,
+  id, slug, title, department, category, productionBanner, name, picture1, picture2, picture3,
   picture4, description, manufacturer, disneyBrand, character, material,
   anyArticulation, weight, width, height, depth, price, discount, promotionalPrice,
   paymentsConditions, paymentsValues, paymentsFee, paymentsShipping) {
@@ -11,6 +11,7 @@ function Product(
   this.title = title;
   this.department = department;
   this.category = category;
+  this.productionBanner = productionBanner;
   this.name = name;
   this.picture1 = picture1;
   this.picture2 = picture2;
@@ -46,6 +47,7 @@ function getProducts() {
         product.title,
         product.department,
         product.category,
+        product.productionBanner,
         product.name,
         product.picture1,
         product.picture2,
