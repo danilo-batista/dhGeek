@@ -1,7 +1,7 @@
-const ProductModel = require("../models/product")
+const productModel = require("../models/product")
 
-function mostrar (request, response) {
-    const productsList = ProductModel.getProducts();
-    response.render('produto', {productsList});
+function mostrar(request, response) {
+    const productsList = productModel.getProducts();
+    response.render('produto', { productsList });
 }
-module.exports = {mostrar}
+module.exports = { mostrar }

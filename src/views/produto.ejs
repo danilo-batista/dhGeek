@@ -15,7 +15,8 @@
   <link rel="stylesheet" href="/public/styles/partials/payment-security.css" />
   <link rel="stylesheet" href="/public/styles/partials/contact-info.css" />
   <link rel="stylesheet" href="/public/styles/partials/footer.css" />
-  <title>Disney Brasil | Produto</title>
+  <title>Shop Disney |
+  </title>
 </head>
 
 <body>
@@ -50,44 +51,45 @@
     </section>
     <% for (let product of productsList) { %>
       <p class="path">
-        <%= product.path %>
+        Home > Todos os produtos > <%= product.category %> > <%= product.name %>
       </p>
       <section class="item">
         <div class="item__gallery">
           <div class="item__gallery__main">
             <img class="item__gallery__main--image" src="<%= product.picture1 %>"
-              alt="estatua-the-child-baby-yoda-mandalorian" />
+              alt="<%= product.name %> - Posição 1" />
           </div>
           <div class="item__gallery__mini">
             <div class="item__gallery__mini-card">
               <img class="item__gallery__mini-card--image" src="<%= product.picture2 %>"
-                alt="estatua-the-child-baby-yoda-mandalorian" />
+                alt="<%= product.name %> - Posição 2" />
             </div>
             <div class="item__gallery__mini-card">
               <img class="item__gallery__mini-card--image" src="<%= product.picture3 %>"
-                alt="estatua-the-child-baby-yoda-mandalorian" />
+                alt="<%= product.name %> - Posição 3" />
             </div>
             <div class="item__gallery__mini-card">
               <img class="item__gallery__mini-card--image" src="<%= product.picture4 %>"
-                alt="estatua-the-child-baby-yoda-mandalorian" />
+                alt="<%= product.name %> - Posição 4" />
             </div>
           </div>
         </div>
         <div class="item__data">
           <p class="item__data--off">
-            <%= product.discount %> OFF
+            <%= product.discount %>% OFF
           </p>
           <p class="item__data--name">
             <%= product.name %>
           </p>
           <p class="item__data--old-price">
-            <%= product.oldPrice %>
-          </p>
-          <p class="item__data--price">
             <%= product.price %>
           </p>
+          <p class="item__data--price">
+            <%= product.promotionalPrice %>
+          </p>
           <p class="item__data--payment-conditions">
-            <%= product.paymentConditions %>
+            <small>ou</small>
+            <%= product.paymentsConditions %>x sem juros de R$ <%= product.paymentsValues %>
           </p>
           <div class="item__data__shipping">
             <hr class="item__shipping--break" />
@@ -113,7 +115,7 @@
                 value="Adicionar ao carrinho" />
             </div>
             <p class="item__buying--suggestion">
-              Pague com Nononon em 3x sem juros!
+              Pague com Koin em 3x sem juros no boleto!
             </p>
           </div>
         </div>
@@ -188,10 +190,21 @@
       </nav>
       <article class="description">
         <p class="description__title">
-          <=% product.descriptionTitle %>
+          Descrição
         </p>
         <p class="description__text">
-          <=% product.description %>
+          <%= product.description %>
+        </p><br>
+        <p class="description__text">
+          <strong>Fabricante</strong>: <%= product.manufacturer %><br>
+            <strong>Série</strong>: <%= product.disneyBrand %><br>
+              <strong>Personagem</strong>: <%= product.character %><br>
+                <strong>Material base</strong>: <%= product.material %><br>
+                  <strong>Possui articulação</strong>: <%= product.anyArticulation %><br>
+                    <strong>Peso<small>(kg)</small></strong>: <%= product.weight %><br>
+                      <strong>Largura<small>(cm)</small></strong>: <%= product.width %><br>
+                        <strong>Altura<small>(cm)</small></strong>: <%= product.height %><br>
+                          <strong>Profundidade<small>(cm)</small></strong>: <%= product.depth %><br>
         </p>
         <% } %>
       </article>
