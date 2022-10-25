@@ -4,4 +4,9 @@ function mostrar(request, response) {
     const productsList = productModel.getProducts();
     response.render('produto', { productsList });
 }
-module.exports = { mostrar }
+
+function buscar(request, response) {
+    const productsList = productModel.getProducts();
+    response.render('busca.ejs', { productsList });
+}
+module.exports = { mostrar, buscar }

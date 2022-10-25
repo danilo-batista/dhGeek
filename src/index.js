@@ -13,7 +13,7 @@ app.set('view engine', 'ejs');
 app.set('views', 'src/views');
 
 app.use('/', mainRoutes);
-app.use('/produto', productRoutes);
+app.use('/produtos', productRoutes);
 app.use('/usuario', userRoutes);
 
 app.listen(3333, () => {

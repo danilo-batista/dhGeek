@@ -63,11 +63,11 @@ function getProducts() {
         product.width,
         product.height,
         product.depth,
-        product.price,
+        product.price.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }),
         product.discount,
-        product.promotionalPrice,
+        product.promotionalPrice.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }),
         product.paymentsConditions,
-        product.paymentsValues,
+        product.paymentsValues.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }),
         product.paymentsFee,
         product.paymentsShipping
       )
