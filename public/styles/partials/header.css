@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	text-decoration: none;
 }
 
 header {
@@ -38,6 +39,22 @@ header {
 	border: none;
 	background-color: var(--disney-white);
 	cursor: pointer;
+	position: relative;
+}
+
+.cart-button div{
+	background-color: red;
+	color: var(--disney-white);
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	font-size: 14px;
+	font-family: "Raleway";
+	text-align: center;
+	position: absolute;
+	top: -7px;
+	right: -6px;
+    display: none;
 }
 
 .hamburguer-menu {
@@ -118,6 +135,7 @@ header {
 #sidebar-menu a{
 	font-weight: 700;
 	font-family: "Roboto";
+	color: var(--disney-mediumgray);
 }
 
 .separated-color__menu{
@@ -175,7 +193,7 @@ header {
 		font-size: 24px;
 		color:  #464646;
 		line-height: 28px;
-		font-family: "Roboto", sans-serif;
+		font-family: "Raleway", sans-serif;
 	}
 
 	.nav-bar li a{

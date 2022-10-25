@@ -20,32 +20,8 @@
 </head>
 
 <body>
+    <%- include("./partials/header") %>
   <% for (let product of productsList) { %>
-    <header>
-      <img class="logo" src="/public/images/brands/disney-logo.svg" alt="logo" />
-      <ul class="nav-bar">
-        <li>
-          <link href="#" />Clássicos
-        </li>
-        <li>
-          <link href="#" />Marvel
-        </li>
-        <li>
-          <link href="#" />Princesas
-        </li>
-        <li>
-          <link href="#" />Star Wars
-        </li>
-      </ul>
-      <button class="login-button" type="submit">Login</button>
-      <button class="hamburguer-menu" type="submit">
-        <img src="/public/images/menu.svg" alt="menu" />
-      </button>
-      <div class="busca">
-        <input type="text" placeholder="O que deseja encontrar ?" />
-        <button><img src="/public/images/lupa.svg" alt="lupa" /></button>
-      </div>
-    </header>
     <main class="main">
       <section class="hero">
         <img class="hero--image" src="<%= product.productionBanner %>"
