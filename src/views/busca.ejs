@@ -2,8 +2,8 @@
     <%- include("./partials/header") %>
 
         <article class="showcase__products__container products-flex">
-            <% for (let product of productsList) { %>
-                <div class="products-flex__item" onclick="location.href='/produtos/mostrar/<%= product.id %>'"
+            <% for (let product of productData) { %>
+                <div class="products-flex__item" onclick="location.href='/produtos/<%= product.id %>'"
                     style="cursor: pointer;">
 
                     <div class="products-flex__item__rectangle">

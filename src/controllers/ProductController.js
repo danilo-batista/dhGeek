@@ -1,20 +1,34 @@
 const productModel = require("../models/product")
 
-function mostrar(request, response) {
+function searchByCategory(request, response) {
+    let category = request.params.category;
+    const productsList = productModel.getProducts();
+
+    let productData = [];
+    for (let i = 0; i < productsList.length; i++) {
+        if (productsList[i].category.toLowerCase() == category) {
+            productData.push(productsList[i]);
+        }
+    }
+    response.render('busca', { productData });
+}
+
+function searchById(request, response) {
     let id = request.params.id;
     const productsList = productModel.getProducts();
 
-    let productDetails = [];
+    let productData = [];
     for (let i = 0; i < productsList.length; i++) {
         if (productsList[i].id == id) {
-            productDetails.push(productsList[i]);
+            productData.push(productsList[i]);
         }
     }
-    response.render('produto', { productDetails });
+    response.render('produto', { productData });
 }
 
-function buscar(request, response) {
-    const productsList = productModel.getProducts();
-    response.render('busca.ejs', { productsList });
+function search(request, response) {
+    const productData = productModel.getProducts();
+
+    response.render('busca.ejs', { productData });
 }
-module.exports = { mostrar, buscar }
+module.exports = { search, searchById, searchByCategory }
