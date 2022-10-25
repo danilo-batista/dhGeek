@@ -69,9 +69,8 @@ function getProducts() {
         product.paymentsConditions,
         product.paymentsValues.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }),
         product.paymentsFee,
-        product.paymentsShipping
+        product.paymentsShipping.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }),
       )
     );
 }
-
 module.exports = { getProducts };

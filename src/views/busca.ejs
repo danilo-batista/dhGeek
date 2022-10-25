@@ -3,27 +3,24 @@
 
         <article class="showcase__products__container products-flex">
             <% for (let product of productsList) { %>
-                <div>
-                    <a href="/produtos/mostrar/<%= product.slug %>">
-                        <div class=" products-flex__item">
+                <div class="products-flex__item" onclick="location.href='/produtos/mostrar/<%= product.id %>'"
+                    style="cursor: pointer;">
 
-                            <div class="products-flex__item__rectangle">
-                                <img class="products-flex__image" src="<%= product.picture1 %>"
-                                    alt="<%= product.name %> - Posição 1" />
-                            </div>
-                            <a class="products__link--styled" href="#">
-                                <%= product.name %>
-                            </a>
-                            <p class="products__price--styled">
-                                <%= product.price %>
-                            </p>
-                            <p class="products__price_conditions--styled">
-                                <small>
-                                    <%= product.paymentsConditions %>x | R$ <%= product.paymentsValues %>
-                                </small>
-                            </p>
+                    <div class="products-flex__item__rectangle">
+                        <img class="products-flex__image" src="<%= product.picture1 %>"
+                            alt="<%= product.name %> - Posição 1" />
+                    </div>
+                    <a class="products__link--styled" href="#">
+                        <%= product.name %>
                     </a>
-                </div>
+                    <p class="products__price--styled">
+                        <%= product.price %>
+                    </p>
+                    <p class="products__price_conditions--styled">
+                        <small>
+                            <%= product.paymentsConditions %>x | R$ <%= product.paymentsValues %>
+                        </small>
+                    </p>
                 </div>
                 <% } %>
         </article>
