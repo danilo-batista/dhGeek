@@ -37,7 +37,7 @@ function Product(
 }
 
 function getProducts() {
-  const tempPath = path.join(__dirname, "../databases/products-starwars.json")
+  const tempPath = path.join(__dirname, "../databases/products.json")
   const productsList = JSON.parse(fs.readFileSync(tempPath, "utf-8"));
   return productsList.map
     (product =>
