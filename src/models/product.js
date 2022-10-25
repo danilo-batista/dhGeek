@@ -37,7 +37,7 @@ function Product(
 }
 
 function getProducts() {
-  const tempPath = path.join(__dirname, "../databases/products-starwars.json")
+  const tempPath = path.join(__dirname, "../databases/products.json")
   const productsList = JSON.parse(fs.readFileSync(tempPath, "utf-8"));
   return productsList.map
     (product =>
@@ -63,15 +63,14 @@ function getProducts() {
         product.width,
         product.height,
         product.depth,
-        product.price,
+        product.price.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }),
         product.discount,
-        product.promotionalPrice,
+        product.promotionalPrice.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }),
         product.paymentsConditions,
-        product.paymentsValues,
+        product.paymentsValues.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }),
         product.paymentsFee,
-        product.paymentsShipping
+        product.paymentsShipping.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }),
       )
     );
 }
-
 module.exports = { getProducts };
