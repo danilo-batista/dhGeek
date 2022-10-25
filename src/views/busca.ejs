@@ -1,26 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
 <%- include("./partials/head") %>
-    <%- include("./partials/header") %>
+    <title>
+        Produtos | Disney Brasil
+    </title>
+    </head>
 
-        <article class="showcase__products__container products-flex">
-            <% for (let product of productData) { %>
-                <div class="products-flex__item" onclick="location.href='/produtos/<%= product.id %>'"
-                    style="cursor: pointer;">
+    <body>
+        <%- include("./partials/header") %>
+            <article class="showcase__products__container products-flex">
+                <% for (let product of productData) { %>
+                    <div class="products-flex__item" onclick="location.href='/produtos/<%= product.id %>'"
+                        style="cursor: pointer;">
 
-                    <div class="products-flex__item__rectangle">
-                        <img class="products-flex__image" src="<%= product.picture1 %>"
-                            alt="<%= product.name %> - Posição 1" />
+                        <div class="products-flex__item__rectangle">
+                            <img class="products-flex__image" src="<%= product.picture1 %>"
+                                alt="<%= product.name %> - Posição 1" />
+                        </div>
+                        <a class="products__link--styled" href="#">
+                            <%= product.name %>
+                        </a>
+                        <p class="products__price--styled">
+                            <%= product.price %>
+                        </p>
+                        <p class="products__price_conditions--styled">
+                            <small>
+                                <%= product.paymentsConditions %>x | R$ <%= product.paymentsValues %>
+                            </small>
+                        </p>
                     </div>
-                    <a class="products__link--styled" href="#">
-                        <%= product.name %>
-                    </a>
-                    <p class="products__price--styled">
-                        <%= product.price %>
-                    </p>
-                    <p class="products__price_conditions--styled">
-                        <small>
-                            <%= product.paymentsConditions %>x | R$ <%= product.paymentsValues %>
-                        </small>
-                    </p>
-                </div>
-                <% } %>
-        </article>
+                    <% } %>
+            </article>
+
+            <%- include("./partials/main-footer") %>
+                </main>
+
+                <%- include("./partials/footer") %>
+    </body>
+
+</html>
