@@ -1,7 +1,7 @@
-const productController = {
-    mostrar: (request, response) => {
-        response.render('produto');
-    },
-};
+const productModel = require("../models/product")
 
-module.exports = productController;
+function mostrar(request, response) {
+    const productsList = productModel.getProducts();
+    response.render('produto', { productsList });
+}
+module.exports = { mostrar }
