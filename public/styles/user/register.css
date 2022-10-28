@@ -107,6 +107,11 @@ input::-webkit-calendar-picker-indicator{
     flex-direction: column;
 }
 
+.msg-error{
+    color: red;
+    font-size: 14px;
+}
+
 @media(min-width:479px){
     .main-login form div div{
          align-items: baseline;
