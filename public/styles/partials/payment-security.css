@@ -1,9 +1,10 @@
 .main-footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    gap: 31px;
 }
 
 .payments {
@@ -131,7 +132,7 @@
 @media(min-width: 1024px) {
     .main-footer {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;

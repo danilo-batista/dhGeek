@@ -10,16 +10,7 @@
 
     background-color: var(--disney-lightgray);
     font-family: "Roboto", sans-serif;
-}
 
-.contact-info__menu {
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .contact-info hr {
@@ -43,7 +34,7 @@
     margin-bottom: 1rem;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
@@ -119,24 +110,18 @@
 
 
     .contact-info__menu--brand {
-        margin: 2rem;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        max-width:180px;
+        max-height:180px;
     }
 
     .contact-info__menu ul {
-        list-style-type: none;
-        padding: 0 10px;
-        margin-top: 1.2rem;
-        margin-bottom: 1rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
-        line-height: 2rem;
         text-align: center;
-        color: var(--disney-darkgray);
+        display: flex;
+        align-items: center ;
+        justify-content: space-between;
+        flex-direction: column;
+        width:200px;
+        height:230px;
     }
 
     .contact-info__form {
