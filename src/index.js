@@ -6,7 +6,6 @@ const productRoutes = require("./routes/productRoutes");
 const userRoutes = require("./routes/userRoutes");
 const loginRoutes = require("./routes/LoginRoutes");
 
-
 const app = express();
 const dirname = path.resolve();
 
