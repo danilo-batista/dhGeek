@@ -1,18 +1,65 @@
-<footer class="copyright">
-    <div class="copyright--software-house">
-        <p>
-            Desenvolvido por <strong>DH Geek | <span id="year"></span></strong>
-        </p>
-    </div>
-    <div class="copyright--authors">
-        <a href="https://www.linkedin.com/in/danilobatista/" target="_blank">Danilo Batista</a>
-        |
-        <a href="https://github.com/RenanppCosta" target="_blank">Renan Costa</a>
-        |
-        <a href="https://www.linkedin.com/in/aliomar-lopes-neto/" target="_blank">Aliomar Lopes Neto</a>
-        |
-        <a href="https://github.com/Annefedy" target="_blank">Anne Carine Bien Aime</a>
-    </div>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="/public/styles/base/reset.css" />
+	<link rel="stylesheet" href="/public/styles/base/normalize.css" />
+	<link rel="stylesheet" href="/public/styles/base/variables.css" />
+
+	<link rel="stylesheet" href="/public/styles/partials/header.css" />
+	<link rel="stylesheet" href="/public/styles/partials/main-banner.css" />
+	<link rel="stylesheet" href="/public/styles/home/products.css" />
+	<link rel="stylesheet" href="/public/styles/product/item.css" />
+	<link rel="stylesheet" href="/public/styles/user/login.css" />
+	<link rel="stylesheet" href="/public/styles/user/register.css" />
+	<link rel="stylesheet" href="/public/styles/partials/payment-security.css" />
+	<link rel="stylesheet" href="/public/styles/partials/contact-info.css" />
+	<link rel="stylesheet" href="/public/styles/partials/footer.css" />
+
+<footer class="footer">
+	<header class="footer__header">
+		<a href="/"><img class="footer__header--logo" src="/public/images/brands/disney-logo.svg"
+			alt="logo" /></a>
+	</header>
+	<nav class="footer__nav">
+		<a class="footer__nav--link" href="/produtos/todos/classicos" />Clássicos</a>
+		<a class="footer__nav--link" href="/produtos/todos/marvel" />Marvel</a>
+		<a class="footer__nav--link" href="/produtos/todos/princesas" />Princesas</a>
+		<a class="footer__nav--link" href="/produtos/todos/starwars" />Star Wars</a>
+		<a class="footer__nav--link" href="/usuario/logar" />Login</a>
+	</nav>
+	<hr class="footer--break">
+	<form class="footer__form" action="https://api.staticforms.xyz/submit" method="POST">
+		<h3 class="footer__form--title">
+			Fale conosco
+		</h3>
+		<label class="footer__form--label" for="name">Nome</label>
+		<input class="footer__form--input" type="text" name="name" id="name" />
+		<label class="footer__form--label" for="email">E-mail</label>
+		<input class="footer__form--input" type="email" name="email" id="email" />
+		<label class="footer__form--label" for="message">Deixe sua mensagem</label>
+		<textarea class="footer__form--textarea" name="message" placeholder="Digite sua messagem"></textarea>
+		<button class="footer__form--button" type="submit">Enviar</button>
+		<input class="footer__form--input" type="hidden" name="accessKey" value="29cb2464-1e88-48c9-a397-964b06b19673" />
+		<input class="footer__form--input" type="hidden" name="redirectTo" value="http://localhost:3333/" />
+	</form>
 </footer>
+<section class="copyright">
+	<div class="copyright--software-house">
+		<p>
+			Desenvolvido por <strong>DH Geek | <span id="year"></span></strong>
+		</p>
+	</div>
+	<div class="copyright__authors">
+		<a class="copyright__authors--link" href="https://www.linkedin.com/in/danilobatista/" target="_blank"> Danilo Batista </a>
+			|
+		<a class="copyright__authors--link" href="https://github.com/RenanppCosta" target="_blank"> Renan Costa </a>
+			|
+		<a class="copyright__authors--link" href="https://www.linkedin.com/in/aliomar-lopes-neto/" target="_blank"> Aliomar Lopes Neto </a>
+			|
+		<a class="copyright__authors--link" href="https://github.com/Annefedy" target="_blank"> Anne Carine Bien Aime </a>
+	</div>
+</section>
 <script src="/public/scripts/app.js"></script>
 <script src="/public/scripts/menu.js"></script>
+<script src="/public/scripts/banner.js"></script>
