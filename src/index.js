@@ -1,5 +1,6 @@
 const express = require("express");
 const path = require("path");
+const cookieParser = require("cookie-parser")
 
 const mainRoutes = require("./routes/mainRoutes");
 const productRoutes = require("./routes/productRoutes");
@@ -12,6 +13,7 @@ const dirname = path.resolve();
 app.use('/public', express.static(dirname + '/public'));
 app.set('view engine', 'ejs');
 app.set('views', 'src/views');
+app.use(cookieParser())
 
 app.use('/', mainRoutes);
 app.use('/produto', productRoutes);

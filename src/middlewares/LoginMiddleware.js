@@ -32,6 +32,8 @@ const fieldsValidation = [
    .withMessage("A senha precisa ter pelo menos 5 caracteres")
 ];
 
+
+
 module.exports = {
     validateUser,
     fieldsValidation
