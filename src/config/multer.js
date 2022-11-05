@@ -5,7 +5,7 @@ const storage = multer.diskStorage({
     cb(null, "public/uploads");
   },
   filename: function (req, file, cb) {
-    cb(null, "product-" + Date.now() + ".jpeg");
+    cb(null, "upload-" + Date.now() + ".jpeg");
   },
 });
 const upload = multer({ storage: storage });

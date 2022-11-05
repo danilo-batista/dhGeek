@@ -1,17 +1,38 @@
 const express = require("express");
 const router = express.Router();
-const controller = require("../controllers/ImmobileController");
+const controller = require("../controllers/UploadController");
 const multerUpload = require("../config/multer");
+const middleware = require ("../middlewares/LogarMiddleware")
 
-/* GET home page. */
-router.get("/cadastrar", controller.showCreatePage);
+router.get(
+  "/cadastrar", 
+  middleware.validateToken, 
+  controller.showCreatePage
+  );
+
 router.post(
-  "/cadastrar",
+   "/cadastrar",
+  middleware.validateToken,
   multerUpload.single("file"),
-  controller.createImmobile
+  controller.createProduct
 );
-router.get("/:id/editar", controller.showEditPage);
-router.put("/:id/editar", multerUpload.single("file"), controller.updateById);
-router.delete("/:id/editar", controller.deleteById);
+
+router.get(
+  "/:id/editar", 
+  middleware.validateToken, 
+  controller.showEditPage
+  );
+
+  router.put(
+    "/:id/editar",
+    middleware.validateToken, 
+    multerUpload.single("file"), 
+    controller.updateById);
+
+router.delete(
+  "/:id/editar", 
+  middleware.validateToken, 
+  controller.deleteById
+  );
 
 module.exports = router;
