@@ -59,6 +59,7 @@ DHGeek is a fictitious company that delivers technology solutions for the creati
 - [Git](https://git-scm.com)
 - [Node.js](https://nodejs.org/en/)
 - [NPM](https://www.npmjs.com/)
+- [MySQL](https://www.mysql.com)
 - [VSCode](https://code.visualstudio.com/) - Or use a code editor of your choice.
 
 <br>
@@ -67,6 +68,10 @@ DHGeek is a fictitious company that delivers technology solutions for the creati
 <br>
 
 ```bash
+# Before started, create the database (mySQL install required)
+$ CREATE DATABASE DHGEEK
+$ USE DHGEEK
+
 # Clone this repository
 $ git clone git@github.com:danilo-batista/dhGeek.git
 
@@ -75,6 +80,9 @@ $ cd dhGeek
 
 # Install the project dependencies
 $ npm install
+
+# Rename the file .env.example to .env and add your database password
+$ ren .env.example .env
 
 # Execute the application
 $ npm start
