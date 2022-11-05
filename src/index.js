@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(methodOverride("_method"));
 
 app.use('/', mainRoutes);
-app.use('/produto', productRoutes);
+app.use('/produtos', productRoutes);
 app.use('/usuario', userRoutes);
 app.use("/logar", logarRoutes);
 app.use('/upload', uploadRoutes);

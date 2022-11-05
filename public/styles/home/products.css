@@ -1,6 +1,10 @@
 .products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
   font-family: 'Raleway', sans-serif;
-  min-width: 100%;
+  width: 100vw;
 }
 
 /* ---------- mobile first ---------- */
@@ -8,7 +12,8 @@
 .products__header {
   display: flex;
   justify-content: space-between;
-  margin: auto 0.88rem auto 0.88rem;
+  align-self: center;
+  width: 95vw;
 }
 
 .products__header__title {
@@ -45,7 +50,7 @@
 
 .products-flex {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-evenly;
   margin-bottom: 2rem;
 }

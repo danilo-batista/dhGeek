@@ -10,15 +10,15 @@
 .payments {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 
-    width: 328px;
-    margin: 0.5rem 1.5rem;
+    width: 95vw;
     border-radius: 0.5rem;
     border: 1px solid var(--disney-mediumgray);
 
     font-family: 'Raleway', sans-serif;
     text-align: center;
+    align-self: center;
 
     color: var(--disney-darkgray);
 }
@@ -56,14 +56,15 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-self: center;
 
-    width: 328px;
-    margin: 0.5rem 1.5rem;
+    width: 95vw;
     border-radius: 0.5rem;
     border: 1px solid var(--disney-mediumgray);
 
     font-family: 'Raleway', sans-serif;
     text-align: center;
+    align-self: center;
 
     color: var(--disney-darkgray);
 }
@@ -91,9 +92,6 @@
         flex-direction: column;
         flex-wrap: wrap;
 
-        width: 703px;
-        height: 178px;
-        margin: 0.5rem 1.5rem;
         border-radius: 0.5rem;
         border: 1px solid var(--disney-mediumgray);
 
