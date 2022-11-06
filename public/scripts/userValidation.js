@@ -87,7 +87,7 @@ function userFormValidation(userEvent) {
 	}
 
   // VALIDATION KEY VERIFICATION
-  if(validationKey > 0){
+  if(validationKey > 0) {
 		userEvent.preventDefault();
 	}
 }
