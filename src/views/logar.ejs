@@ -28,9 +28,9 @@
                 <div class="main-login">
                     <h2>Entrar</h2>
                     <div class="main-login__form">
-                        <form method="post">
+                        <form action="" method="post">
                             <label>E-mail *
-                                <input type="email" name="email" id="email">
+                                <input type="email" name="email" id="e-mail">
                             </label>
                             <label>Senha *
                                 <input type="password" name="password" id="password">
@@ -43,7 +43,7 @@
                                     <a id="tag-all" href="#">Perdeu sua senha?</a>
                                 </div>
                                 <a id="tag-tablet" href="#">Perdeu sua senha?</a>
-                                <button>Acessar</button>
+                                <button type="submit">Acessar</button>
                             </div>
                         </form>
                     </div>
@@ -51,12 +51,14 @@
                 <div class="main-login">
                     <h2>Cadastrar</h2>
                     <div class="main-login__form">
-                        <form method="post">
+                        <form id="userForm" action="" method="post">
                             <label>E-mail *
-                                <input type="email" name="email" id="email">
+                                <input type="email" name="email" id="userEmail">
+                                <span class="main-login__error email--error"></span>
                             </label>
                             <label>Senha *
-                                <input type="password" name="password" id="password">
+                                <input type="password" name="password" id="userPassword">
+                                <span class="main-login__error password--error"></span>
                             </label>
 
                             <div id="div-register">
@@ -66,7 +68,7 @@
                                     política de privacidade</p>
 
                                 <div id="div-button-register">
-                                    <button id="button-register">Cadastrar</button>
+                                    <button type="submit" id="userFormButton">Cadastrar</button>
                                 </div>
                             </div>
 
