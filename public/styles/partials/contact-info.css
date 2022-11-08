@@ -5,14 +5,24 @@
     margin-top: 1.5rem;
     width: 100vw;
     justify-content: center;
+    align-items: center;
 
     background-color: var(--disney-lightgray);
     font-family: "Roboto", sans-serif;
+}
 
+.contact-info__menu {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-info hr {
-    width: 152px;
+    width: 250px;
 
     border: 1px solid var(--disney-mediumblue);
 }
@@ -24,7 +34,7 @@
     margin-bottom: 1rem;
     line-height: 2rem;
     text-align: center;
-    color: var(--disney-darkgray);
+    color: var(--disney-gray);
 }
 
 .contact-info__form {
@@ -38,7 +48,7 @@
     align-items: stretch;
 
     text-align: center;
-    color: var(--disney-darkgray);
+    color: var(--disney-gray);
 }
 
 .contact-info__form label {
@@ -49,6 +59,7 @@
     margin-top: 0.2rem;
     border: solid 2px var(--disney-mediumblue);
     background-color: var(--disney-lightgray);
+    color: var(--disney-gray);
     border-radius: 4px;
 }
 
@@ -73,7 +84,7 @@
     margin: 0.4rem 1.5rem 1rem 1.5rem;
     font-size: small;
     text-align: center;
-    color: var(--disney-mediumgray);
+    color: var(--disney-gray);
 }
 
 @media(min-width: 480px) {
@@ -104,12 +115,7 @@
 
     .contact-info__menu ul {
         text-align: center;
-        display: flex;
-        align-items: center ;
-        justify-content: space-between;
-        flex-direction: column;
-        width:200px;
-        height:230px;
+        color: var(--disney-darkgray);
     }
 
     .contact-info__form {
@@ -122,7 +128,7 @@
         align-items: stretch;
 
         text-align: center;
-        color: var(--disney-darkgray);
+        color: var(--disney-gray);
     }
 }
 
@@ -177,7 +183,7 @@
         font-size: 1.5rem;
         line-height: 2.6rem;
         text-align: center;
-        color: var(--disney-darkgray);
+        color: var(--disney-gray);
     }
 
     .contact-info__form {
@@ -190,7 +196,7 @@
         align-items: stretch;
 
         text-align: center;
-        color: var(--disney-darkgray);
+        color: var(--disney-gray);
     }
 
     .contact-info__form h3 {
