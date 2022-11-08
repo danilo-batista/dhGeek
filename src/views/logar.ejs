@@ -73,12 +73,12 @@
                 <h2>Entrar</h2>
                 <div class="main-login__form">
                     <form method="post">
-                        <label>E-mail *
-                            <input type="email" name="email" id="email">
-                        </label>
-                        <label>Senha *
-                            <input type="password" name="password" id="password">
-                        </label>
+                        <label for="input-email" >E-mail *  </label>
+                            <input type="email" name="email" id="email34" value="<%=data.email%>" />
+                        
+                        <label for="input-password">Senha *  </label>
+                            <input type="password" name="password" id="password23" value="<%=data.password%>" />
+                       
                         <div>
                             <div>
                                 <label id="checkbox">Lembre-me
@@ -87,9 +87,18 @@
                                 <a id="tag-all" href="#">Perdeu sua senha?</a>
                             </div>
                             <a id="tag-tablet" href="#">Perdeu sua senha?</a>
-                            <button>Acessar</button>
+                            <button type="submit">Acessar</button>
                         </div>
                     </form>
+                    
+  
+                    <% if (errors) { %>
+                        <ul>
+                          <% for (let error of errors) { %>
+                            <li><%=error.msg%></li>
+                          <% } %>
+                        </ul>
+                      <% } %>
                 </div>
             </div>
             <div class="main-login">
@@ -97,10 +106,10 @@
                 <div class="main-login__form">
                     <form method="post">
                         <label>E-mail *
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email23">
                         </label>
                         <label>Senha *
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password34">
                         </label>
 
                         <div id="div-register">
