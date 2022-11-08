@@ -117,12 +117,6 @@ section{
     color: #bbb;
 }
 
-.main-login__error{
-    color: #AF1F22;
-    font-size: 0.8rem;
-
-}
-
 #button-register{
     margin-top: 15px;
 }
@@ -182,7 +176,7 @@ section{
     }
     
     .main-login__form{
-        height: 400px;
+        height: 330px;
         width: 80%;
         padding: 20px;
     }
@@ -214,9 +208,9 @@ section{
         align-items: center;
         padding: 0;
     }
-
+     
     #div-button-register{
-        flex: 0.5;
+       flex: 0.5;
     }
 
     #button-register{
@@ -229,7 +223,7 @@ section{
 
     .main-login__form button{
         height: 48px;
-        width: 7rem;
+        width: 37%;
     }
 
     #tag-tablet{
