@@ -1,5 +1,5 @@
-const jwtkey ="hfgeste657";
+const jwtKey ="hfgeste657";
 
     module.exports = {
-        jwtkey,
+        jwtKey,
      };

@@ -32,7 +32,8 @@ const Usuario = database.define('users', {
 });
 
 //Criar uma tabela quando não existe nenhuma tabela
-//Usuario.sync();
+    
+   // Usuario.sync();
 
 //Verifique se há diferença na tabela, faça a alteração
 //User.sync({alter: true})
