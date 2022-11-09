@@ -21,52 +21,9 @@
 </head>
 
 <body>
-    <header>
-        <button class="hamburguer-menu" type="submit"><img src="/public/images/menu.svg" alt="menu"></button>
-        <button class="close-menu" type="submit"><img src="/public/images/close-menu.svg" alt="close-menu"></button>
-        <ul class="nav-bar">
-            <li>
-                <a href="#">Clássicos</a>
-            </l1>
-            <li>
-                <a href="#">Marvel</a>
-            </li>
-            <li>
-                <a href="#">Princesas</a>
-            </li>
-            <li>
-                <a href="#">Star Wars</a>
-            </li>
-        </ul>
-        <button class="login-button" type="submit">Login</button>
-        <img class="logo" src="/public/images/brands/disney-logo.svg" alt="logo">
-        <button class="cart-button" type="submit"><img src="/public/images/cart-icon.svg" alt="shopping-cart"></button>
-        
-        <div class="busca">
-            <input type="text" placeholder="O que deseja encontrar ?">
-            <button><img src="/public/images/lupa.svg" alt="lupa"></button>
-        </div>
-        <div id="sidebar-menu">
-            <button>Login</button>
-            <div class="separated-color__menu"></div>
-            <ul>
-               <li><a href="#anuncios">Home</a></li>
-               <li><a href="#styles">Clássicos</a></li>
-               <li><a href="#contact">Marvel</a></li>
-               <li><a href="#contact">Princesas</a></li>
-               <li><a href="#contact">Star Wars</a></li>
-            </ul>
-            <div class="separated-color__menu"></div>
-            <ul>
-                <li><a href="#anuncios">Minha Conta</a></li>
-                <li><a href="#styles">Lista de desejos</a></li>
-                <li><a href="#contact">Meu carrinho</a></li>
-            </ul>
-            <div class="separated-color__menu"></div>
-            <a href="#">Fechar</a>
-        </div>
-    </header>
+    <%- include("./partials/header") %>
 
+<<<<<<< HEAD
     <main>
         <section>
             <div class="main-login">
@@ -80,12 +37,31 @@
                             <input type="password" name="password" id="password23" value="<%=data.password%>" />
                        
                         <div>
+=======
+        <main>
+            <section>
+                <div class="main-login">
+                    <h2>Entrar</h2>
+                    <div class="main-login__form">
+                        <form method="post">
+                            <label>E-mail *
+                                <input type="email" name="email" id="email">
+                            </label>
+                            <label>Senha *
+                                <input type="password" name="password" id="password">
+                            </label>
+>>>>>>> 78c51e862ec10e4c5e49df2b9c1268739b303036
                             <div>
-                                <label id="checkbox">Lembre-me
-                                    <input type="checkbox" name="remember" id="remember">
-                                </label>
-                                <a id="tag-all" href="#">Perdeu sua senha?</a>
+                                <div>
+                                    <label id="checkbox">Lembre-me
+                                        <input type="checkbox" name="remember" id="remember">
+                                    </label>
+                                    <a id="tag-all" href="#">Perdeu sua senha?</a>
+                                </div>
+                                <a id="tag-tablet" href="#">Perdeu sua senha?</a>
+                                <button>Acessar</button>
                             </div>
+<<<<<<< HEAD
                             <a id="tag-tablet" href="#">Perdeu sua senha?</a>
                             <button type="submit">Acessar</button>
                         </div>
@@ -161,69 +137,43 @@
                 <div class="security_methods">
                     <div class="security_methods--brands">
                         <img src="/public/images/brands/google-safe-browsing.svg" alt="Logotipo Google Safe Browsing.">
+=======
+                        </form>
+>>>>>>> 78c51e862ec10e4c5e49df2b9c1268739b303036
                     </div>
                 </div>
-            </fieldset>
-        </section>
-        <section class="contact-info">
-            <div class="contact-info__menu">
-                <img class="contact-info__menu--brand" src="/public/images/brands/disney-logo.svg" alt="logo">
-                <ul>
-                    <li>
-                        <link href="#">Clássicos
-                    </li>
-                    <li>
-                        <link href="#">Marvel
-                    </li>
-                    <li>
-                        <link href="#">Princesas
-                    </li>
-                    <li>
-                        <link href="#">Star Wars
-                    </li>
-                    <li>
-                        <link href="#">Login
-                    </li>
-                </ul>
-                <hr>
-                <div>
-                    <form class="contact-info__form" action="https://api.staticforms.xyz/submit" method="POST">
-                        <h3>Fale conosco</h3>
-                        <label for="name">Nome</label>
-                        <input type="text" name="name" id="name">
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email">
-                        <label for="message">Deixe sua mensagem</label>
-                        <textarea name="message" cols="30" rows="10" placeholder="Digite sua messagem"> </textarea>
-                        <button type="submit">Enviar</button>
-                        <input type="hidden" name="accessKey" value="29cb2464-1e88-48c9-a397-964b06b19673">
-                        <input type="hidden" name="redirectTo" value="http://localhost:3333/">
-                    </form>
+                <div class="main-login">
+                    <h2>Cadastrar</h2>
+                    <div class="main-login__form">
+                        <form method="post">
+                            <label>E-mail *
+                                <input type="email" name="email" id="email">
+                            </label>
+                            <label>Senha *
+                                <input type="password" name="password" id="password">
+                            </label>
+
+                            <div id="div-register">
+                                <p>Seus dados pessoais serão usados para aprimorar a sua experiência em todo este site,
+                                    para
+                                    gerenciar o acesso a sua conta e para outros propósitos, como descritos em nossa
+                                    política de privacidade</p>
+
+                                <div id="div-button-register">
+                                    <button id="button-register">Cadastrar</button>
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+
                 </div>
-            </div>
+            </section>
+            <%- include("./partials/main-footer") %>
+        </main>
 
-            <div class="contact-info__copyright">
-                <p class="contact-info__copyright--message">© Disney © Disney•Pixar © & ™ Lucasfilm LTD © <span
-                        id="year"></span> MARVEL. Reservados todos os
-                    direitos, Disney Entertainment</p>
-            </div>
-        </section>
-    </main>
-
-    <footer class="copyright">
-        <div class="copyright--software-house">
-            <p>Desenvolvido por <strong>DH Geek | <span id="year"></span></strong></p>
-        </div>
-        <div class="copyright--authors">
-            <a href="https://www.linkedin.com/in/danilobatista/" target="_blank">Danilo Batista</a> |
-            <a href="https://github.com/RenanppCosta" target="_blank">Renan Costa</a> |
-            <a href="https://www.linkedin.com/in/aliomar-lopes-neto/" target="_blank">Aliomar Lopes Neto</a> |
-            <a href="https://github.com/Annefedy" target="_blank">Anne Carine Bien Aime</a>
-        </div>
-    </footer>
-
-    <script src="/public/scripts/app.js"></script>
-    <script src="/public/scripts/menu.js"></script>
+        <%- include("./partials/footer") %>
 </body>
 
 </html>
