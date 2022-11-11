@@ -4,13 +4,13 @@ const { jwtKey } = require("../config/secrets");
 
 
 function validateUser(req, res, next) {
-    if(!req.body.email){
-        return res.send ("Você deve inserir o e-mail")
-    }
+   // if(!req.body.email){
+     //   return res.send ("Você deve inserir o e-mail")
+   // }
 
-    if(!req.body.email.includes("@")){
-      return res.send("você deve digitar o e-mail corretamente")
-    }
+    //if(!req.body.email.includes("@")){
+    //  return res.send("você deve digitar o e-mail corretamente")
+   // }
 
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
@@ -27,6 +27,7 @@ function validateUser(req, res, next) {
   }
 
 const fieldsValidation = [
+  body("email").isEmail().withMessage("Você precisa digitar o email"),
    body("password")
    .notEmpty()
    .withMessage("Você deve digitar a senha").isLength ({min: 5})
@@ -36,7 +37,7 @@ const fieldsValidation = [
 function validateToken(req, res, next) {
   const { token } = req.cookies;
   if (!token) {
-    return res.redirect("/usuario/cadastrar");
+    return res.redirect("/logar");
   }
 
   try {
@@ -44,7 +45,7 @@ function validateToken(req, res, next) {
     console.log(decoded);
   } catch (error) {
     res.cookies("token", " ");
-    return res.redirect("/usuario/cadastrar")
+    return res.redirect("/logar")
   }
 
   next();
