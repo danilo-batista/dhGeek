@@ -2,69 +2,63 @@
 	<title>Cadastre-se | Disney Brasil</title>
 	</head>
 
-	<body>
-		<%- include("./partials/header") %>
-			<main>
-				<section>
-					<div class="main-login">
-						<h2>Crie Sua conta</h2>
-						<div class="main-login__form">
-							<form action="" method="post" id="userForm">
-								<div class="first-div__form">
-									<label>Primeiro Nome*
-										<input type="text" name="first-name" id="userFirstName">
-										<span class="main-login__error fist-name--error"></span>
-									</label>
-									<label>Sobrenome*
-										<input type="text" name="last-name" id="userLastName">
-										<span class="main-login__error last-name--error"></span>
-									</label>
-									<label>Data de Nascimento*
-										<input type="date" name="date" id="userBirthday">
-										<span class="main-login__error birthday--error"></span>
-									</label>
-								</div>
-								<div class="separated-color"></div>
-								<div id="second-div__form">
-									<div id="second-div__form-first-div">
-										<label>E-mail*
-											<input type="email" name="email" id="userEmail">
-											<span class="main-login__error email--error"></span>
-										</label>
-										<label>Senha*
-											<input type="password" name="password" id="userPassword">
-											<span class="main-login__error password--error"></span>
-										</label>
-										<label>Confirme sua Senha*
-											<input type="password" name="confirm-password" id="userPassword2">
-											<span class="main-login__error password2--error"></span>
-										</label>
-									</div>
-									<div id="second-div__form-second-div">
-										<div id="terms">
-											<p>Ao criar uma conta, você concorda com os <strong>Termos de Uso</strong> e
-												com
-												a
-												<strong>Política de Privacidade.</strong>
-											</p>
-											<div>
-												<input type="checkbox" name="accept" id="accept">
-												<label id="registerCheckbox">Sim! Gostaria de receber atualizações e
-													promoções
-													especiais da DisneyShop.</label>
-											</div>
-										</div>
-										<button type="submit" id="userFormButton">Criar minha conta</button>
-									</div>
-								</div>
-							</form>
-						</div>
-						<a href="#">Já possui uma conta? Faça o <strong>Login.</strong></a>
-					</div>
-				</section>
-				<%- include("./partials/main-footer") %>
-			</main>
-			<%- include("./partials/footer") %>
-	</body>
+    <body>
+        <%- include("./partials/header") %>
+            <main>
+                <section>
+                    <div class="main-login">
+                        <h2>Crie Sua conta</h2>
+                        <div class="main-login__form">
+                            <form method="post">
+                                <div class="first-div__form">
+                                    <label>Primeiro Nome*
+                                        <input type="text" name="first-name" id="first-name">
+                                    </label>
+                                    <label>Sobrenome*
+                                        <input type="text" name="last-name" id="last-name">
+                                    </label>
+                                    <label>Data de Nascimento*
+                                        <input type="date" name="date" id="date">
+                                    </label>
+                                </div>
+                                <div class="separated-color"></div>
+                                <div id="second-div__form">
+                                    <div id="second-div__form-first-div">
+                                        <label>E-mail*
+                                            <input type="email" name="email" id="email">
+                                        </label>
+                                        <label>Senha*
+                                            <input type="password" name="password" id="password">
+                                        </label>
+                                        <label>Confirme sua Senha*
+                                            <input type="password" name="confirm-password" id="confirm-password">
+                                        </label>
+                                    </div>
+                                    <div id="second-div__form-second-div">
+                                        <div id="terms">
+                                            <p>Ao criar uma conta, você concorda com os <strong>Termos de Uso</strong> e
+                                                com
+                                                a
+                                                <strong>Política de Privacidade.</strong>
+                                            </p>
+                                            <div>
+                                                <input type="checkbox" name="accept" id="accept">
+                                                <label id="label-checkbox">Sim! Gostaria de receber atualizações e
+                                                    promoções
+                                                    especiais da DisneyShop.</label>
+                                            </div>
+                                        </div>
+                                        <button>Criar minha conta</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <a href="#">Já possui uma conta? Faça o <strong>Login.</strong></a>
+                    </div>
+                </section>
+                <%- include("./partials/main-footer") %>
+            </main>
+            <%- include("./partials/footer") %>
+    </body>
 
 </html>
