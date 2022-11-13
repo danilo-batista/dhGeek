@@ -79,6 +79,7 @@
     background-color: var(--disney-lightgray);
     border-radius: 8px;
     padding: 5px;
+    text-align: start;
   }
   
   .footer__form--textarea {
@@ -89,6 +90,7 @@
     background-color: var(--disney-lightgray);
     border-radius: 8px;
     padding: 5px;
+    text-align: start;
   }
   
   .footer__form--button {
