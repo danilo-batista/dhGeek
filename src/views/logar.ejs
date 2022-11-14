@@ -1,66 +1,67 @@
 <%- include("./partials/head") %>
 <body>
     <%- include("./partials/header") %>
+    <link rel="stylesheet" href="/public/styles/user/login.css" />
 
-        <main>
-            <section>
-                <div class="main-login">
-                    <h2>Entrar</h2>
-                    <div class="main-login__form">
-                        <form action="" method="post">
-                            <label>E-mail *
-                                <input type="email" name="email" id="e-mail">
-                            </label>
-                            <label>Senha *
-                                <input type="password" name="password" id="password">
-                            </label>
+    <main>
+        <section>
+            <div class="main-login">
+                <h2>Entrar</h2>
+                <div class="main-login__form">
+                    <form action="" method="post">
+                        <label>E-mail *
+                            <input type="email" name="email" id="e-mail">
+                        </label>
+                        <label>Senha *
+                            <input type="password" name="password" id="password">
+                        </label>
+                        <div>
                             <div>
-                                <div>
-                                    <label id="checkbox">Lembre-me
-                                        <input type="checkbox" name="remember" id="remember">
-                                    </label>
-                                    <a id="tag-all" href="#">Perdeu sua senha?</a>
-                                </div>
-                                <a id="tag-tablet" href="#">Perdeu sua senha?</a>
-                                <button type="submit">Acessar</button>
+                                <label id="checkbox">Lembre-me
+                                    <input type="checkbox" name="remember" id="remember">
+                                </label>
+                                <a id="tag-all" href="#">Perdeu sua senha?</a>
                             </div>
-                        </form>
-                    </div>
+                            <a id="tag-tablet" href="#">Perdeu sua senha?</a>
+                            <button type="submit">Acessar</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="main-login">
-                    <h2>Cadastrar</h2>
-                    <div class="main-login__form">
-                        <form id="userForm" action="" method="post">
-                            <label>E-mail *
-                                <input type="email" name="email" id="userEmail">
-                                <span class="main-login__error email--error"></span>
-                            </label>
-                            <label>Senha *
-                                <input type="password" name="password" id="userPassword">
-                                <span class="main-login__error password--error"></span>
-                            </label>
+            </div>
+            <div class="main-login">
+                <h2>Cadastrar</h2>
+                <div class="main-login__form">
+                    <form id="userForm" action="" method="post">
+                        <label>E-mail *
+                            <input type="email" name="email" id="userEmail">
+                            <span class="main-login__error email--error"></span>
+                        </label>
+                        <label>Senha *
+                            <input type="password" name="password" id="userPassword">
+                            <span class="main-login__error password--error"></span>
+                        </label>
 
-                            <div id="div-register">
-                                <p>Seus dados pessoais serão usados para aprimorar a sua experiência em todo este site,
-                                    para
-                                    gerenciar o acesso a sua conta e para outros propósitos, como descritos em nossa
-                                    política de privacidade</p>
+                        <div id="div-register">
+                            <p>Seus dados pessoais serão usados para aprimorar a sua experiência em todo este site,
+                                para
+                                gerenciar o acesso a sua conta e para outros propósitos, como descritos em nossa
+                                política de privacidade</p>
 
-                                <div id="div-button-register">
-                                    <button type="submit" id="userFormButton">Cadastrar</button>
-                                </div>
+                            <div id="div-button-register">
+                                <button type="submit" id="userFormButton">Cadastrar</button>
                             </div>
+                        </div>
 
-                        </form>
-
-                    </div>
+                    </form>
 
                 </div>
-            </section>
-            <%- include("./partials/main-footer") %>
-        </main>
 
-        <%- include("./partials/footer") %>
-</body>
+            </div>
+        </section>
+        <%- include("./partials/main-footer") %>
+    </main>
+
+    <%- include("./partials/footer") %>
+    </body>
 
 </html>

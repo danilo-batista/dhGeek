@@ -10,7 +10,7 @@ function renderLogarPage(req, res) {
     console.log(req.body);
     const token = jwt.sign({ email }, jwtkey, { expiresIn: "2h"})
     res.cookie("token", token)
-    return res.redirect("/usuario/cadastrar");
+    return res.redirect("/");
   }
   
   module.exports = {

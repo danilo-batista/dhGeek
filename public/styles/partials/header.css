@@ -9,7 +9,7 @@ header {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	width: 100%;
+	width: 100vw;
 	height: 124px;
 	justify-content: space-around;
 	align-items: center;
@@ -155,7 +155,7 @@ header {
 
 	.busca {
 		order: 2;
-		width: 50%;
+		width: 50vw;
 	}
 
 	.cart-button {
@@ -205,7 +205,7 @@ header {
 	}
 
 	.busca {
-		width: 22%;
+		width: 22vw;
 	}
 
 	.cart-button{
@@ -215,6 +215,6 @@ header {
 	.login-button{
 		display: inline;
 		order: 4;
-		width: 10%;
+		width: 10vw;
 	}
 }
