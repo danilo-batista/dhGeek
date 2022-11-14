@@ -1,78 +1,54 @@
+<%- include("./partials/head") %>
 <body>
     <%- include("./partials/header") %>
+    <link rel="stylesheet" href="/public/styles/user/login.css" />
 
-<<<<<<< HEAD
     <main>
         <section>
             <div class="main-login">
                 <h2>Entrar</h2>
                 <div class="main-login__form">
-                    <form method="post">
-                        <label for="input-email" >E-mail *  </label>
-                            <input type="email" name="email" id="email34" value="<%=data.email%>" />
-                        
-                        <label for="input-password">Senha *  </label>
-                            <input type="password" name="password" id="password23" value="<%=data.password%>" />
-                       
+                    <form action="" method="post">
+                        <label>E-mail *
+                            <input type="email" name="email" id="e-mail">
+                        </label>
+                        <label>Senha *
+                            <input type="password" name="password" id="password">
+                        </label>
                         <div>
-=======
-        <main>
-            <section>
-                <div class="main-login">
-                    <h2>Entrar</h2>
-                    <div class="main-login__form">
-                        <form action="" method="post">
-                            <label>E-mail *
-                                <input type="email" name="email" id="e-mail">
-                            </label>
-                            <label>Senha *
-                                <input type="password" name="password" id="password">
-                            </label>
->>>>>>> 78c51e862ec10e4c5e49df2b9c1268739b303036
                             <div>
-                                <div>
-                                    <label id="checkbox">Lembre-me
-                                        <input type="checkbox" name="remember" id="remember">
-                                    </label>
-                                    <a id="tag-all" href="#">Perdeu sua senha?</a>
-                                </div>
-                                <a id="tag-tablet" href="#">Perdeu sua senha?</a>
-                                <button type="submit">Acessar</button>
+                                <label id="checkbox">Lembre-me
+                                    <input type="checkbox" name="remember" id="remember">
+                                </label>
+                                <a id="tag-all" href="#">Perdeu sua senha?</a>
                             </div>
-<<<<<<< HEAD
                             <a id="tag-tablet" href="#">Perdeu sua senha?</a>
                             <button type="submit">Acessar</button>
                         </div>
                     </form>
-                    
-  
-                    <% if (errors) { %>
-                        <ul>
-                          <% for (let error of errors) { %>
-                            <li><%=error.msg%></li>
-                          <% } %>
-                        </ul>
-                      <% } %>
                 </div>
             </div>
             <div class="main-login">
                 <h2>Cadastrar</h2>
                 <div class="main-login__form">
-                    <form method="post">
+                    <form id="userForm" action="" method="post">
                         <label>E-mail *
-                            <input type="email" name="email" id="email23">
+                            <input type="email" name="email" id="userEmail">
+                            <span class="main-login__error email--error"></span>
                         </label>
                         <label>Senha *
-                            <input type="password" name="password" id="password34">
+                            <input type="password" name="password" id="userPassword">
+                            <span class="main-login__error password--error"></span>
                         </label>
 
                         <div id="div-register">
-                            <p>Seus dados pessoais serão usados para aprimorar a sua experiência em todo este site, para
+                            <p>Seus dados pessoais serão usados para aprimorar a sua experiência em todo este site,
+                                para
                                 gerenciar o acesso a sua conta e para outros propósitos, como descritos em nossa
                                 política de privacidade</p>
 
                             <div id="div-button-register">
-                                <button id="button-register">Cadastrar</button>
+                                <button type="submit" id="userFormButton">Cadastrar</button>
                             </div>
                         </div>
 
@@ -82,78 +58,10 @@
 
             </div>
         </section>
-        <section class="main-footer">
-            <fieldset class="payments">
-                <legend class="payments__title">Formas de pagamento</legend>
-                <div class="payments__methods">
-                    <!-- <div class="payments__methods--brands"> -->
-                    <img src="/public/images/brands/koin.webp" alt="Logotipo Koin.">
-                    <img src="/public/images/brands/pix.svg" alt="Logotipo Pix.">
-                    <!-- </div> -->
-                    <!-- <div class="payments__methods--brands"> -->
-                    <img src="/public/images/brands/mastercard.svg" alt="Logotipo Mastercard.">
-                    <img src="/public/images/brands/boleto.svg" alt="Logotipo Boleto.">
-                    <img src="/public/images/brands/visa.svg" alt="Logotipo Visa.">
-                    <!-- </div> -->
-                    <!-- <div class="payments__methods--brands"> -->
-                    <img src="/public/images/brands/ebanxpay.svg" alt="Logotipo EbanxPay.">
-                    <img src="/public/images/brands/paypal.svg" alt="Logotipo PayPal.">
-                    <!-- </div> -->
-                    <!-- <div class="payments__methods--brands"> -->
-                    <img src="/public/images/brands/picpay.svg" alt="Logotipo PicPay.">
-                    <img src="/public/images/brands/american-express.svg" alt="Logotipo American Express.">
-                    <img src="/public/images/brands/elo.svg" alt="Logotipo Elo.">
-                    <!-- </div> -->
-                    <!-- <div class="payments__methods--brands"> -->
-                    <img src="/public/images/brands/ame-digital.svg" alt="Logotipo Ame.">
-                    <img src="/public/images/brands/diners.svg" alt="Logotipo Diners.">
-                    <!-- </div> -->
-                </div>
-            </fieldset>
-            <fieldset class="security">
-                <legend class="security__title">Segurança e Qualidade</legend>
-                <div class="security_methods">
-                    <div class="security_methods--brands">
-                        <img src="/public/images/brands/google-safe-browsing.svg" alt="Logotipo Google Safe Browsing.">
-=======
-                        </form>
->>>>>>> 78c51e862ec10e4c5e49df2b9c1268739b303036
-                    </div>
-                </div>
-                <div class="main-login">
-                    <h2>Cadastrar</h2>
-                    <div class="main-login__form">
-                        <form id="userForm" action="" method="post">
-                            <label>E-mail *
-                                <input type="email" name="email" id="userEmail">
-                                <span class="main-login__error email--error"></span>
-                            </label>
-                            <label>Senha *
-                                <input type="password" name="password" id="userPassword">
-                                <span class="main-login__error password--error"></span>
-                            </label>
+        <%- include("./partials/main-footer") %>
+    </main>
 
-                            <div id="div-register">
-                                <p>Seus dados pessoais serão usados para aprimorar a sua experiência em todo este site,
-                                    para
-                                    gerenciar o acesso a sua conta e para outros propósitos, como descritos em nossa
-                                    política de privacidade</p>
-
-                                <div id="div-button-register">
-                                    <button type="submit" id="userFormButton">Cadastrar</button>
-                                </div>
-                            </div>
-
-                        </form>
-
-                    </div>
-
-                </div>
-            </section>
-            <%- include("./partials/main-footer") %>
-        </main>
-
-        <%- include("./partials/footer") %>
-</body>
+    <%- include("./partials/footer") %>
+    </body>
 
 </html>
