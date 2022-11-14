@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const controller = require("../controllers/UploadController");
 const multerUpload = require("../config/multer");
-const middleware = require ("../middlewares/LogarMiddleware")
+const middleware = require ("../middlewares/LoginMiddleware")
 
 router.get(
   "/cadastrar", 

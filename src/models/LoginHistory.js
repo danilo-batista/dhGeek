@@ -1,21 +1,20 @@
 const Sequelize = require('sequelize');
 const database = require('../config/db');
 
-const Logar = database.define('login', {
-    id: {
+const Login = database.define('login_history', {
+   login_id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
         allowNull: false,
         primaryKey: true
     },
-    email: {
-        type: Sequelize.STRING(255),
-        unique: true,
+    Login: {
+        type: Sequelize.datetime,
         allowNull: false
     },
-    password: {
-        type: Sequelize.TEXT,
-        allowNull: false
+    user_id: {
+        type: Sequelize.INTEGER,
+    
     },
 }, {
     timestamps: false
@@ -24,8 +23,8 @@ const Logar = database.define('login', {
 //Criar uma tabela quando não existe nenhuma tabela
 //[
     
-   Logar.sync();
+   //Logar.sync();
 
 //Verifique se há diferença na tabela, faça a alteração
-Login.sync({alter: true})
-module.exports = Logar
+//User.sync({alter: true})
+module.exports = Login

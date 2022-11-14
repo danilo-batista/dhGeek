@@ -8,8 +8,9 @@ const methodOverride = require("method-override");
 const mainRoutes = require("./routes/mainRoutes");
 const productRoutes = require("./routes/productRoutes");
 const userRoutes = require("./routes/userRoutes");
-const logarRoutes = require("./routes/LogarRoutes");
+const loginRouter = require("./routes/LoginRouter");
 const uploadRoutes = require("./routes/UploadRoutes");
+
 
 
 const app = express();
@@ -20,13 +21,14 @@ app.set('view engine', 'ejs');
 app.set('views', 'src/views');
 app.use(cookieParser());
 app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
 app.use(methodOverride("_method"));
 
 app.use('/', mainRoutes);
 app.use('/produtos', productRoutes);
-app.use('/usuario', userRoutes);
-app.use("/logar", logarRoutes);
+app.use('/register', userRoutes);
+app.use("/login", loginRouter);
 app.use('/upload', uploadRoutes);
 
 // catch 404 and forward to error handler

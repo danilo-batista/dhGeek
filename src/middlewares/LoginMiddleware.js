@@ -1,9 +1,10 @@
 const {body, validationResult} = require('express-validator');
 const jwt = require("jsonwebtoken");
-const { jwtKey } = require("../config/secrets");
+
 
 
 function validateUser(req, res, next) {
+  console.log(req.cookies);
    // if(!req.body.email){
      //   return res.send ("Você deve inserir o e-mail")
    // }
@@ -14,7 +15,7 @@ function validateUser(req, res, next) {
 
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
-      return res.render("logar", {
+      return res.render("login", {
         errors: errors.array(),
         data: {
           email: req.body.email,
@@ -37,15 +38,15 @@ const fieldsValidation = [
 function validateToken(req, res, next) {
   const { token } = req.cookies;
   if (!token) {
-    return res.redirect("/logar");
+    return res.redirect("/login");
   }
 
   try {
-    const decoded = jwt.verify(token, jwtKey);
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
     console.log(decoded);
   } catch (error) {
     res.cookies("token", " ");
-    return res.redirect("/logar")
+    return res.redirect("/login")
   }
 
   next();

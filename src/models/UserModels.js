@@ -1,30 +1,32 @@
 const Sequelize = require('sequelize');
 const database = require('../config/db');
 
-const Usuario = database.define('users', {
+const User = database.define('users', {
     id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
         allowNull: false,
         primaryKey: true
     },
-    nome: {
+    firstName: {
         type: Sequelize.STRING(255),
         allowNull: false,
     },
-    sobrenome: {
+    lastName: {
         type: Sequelize.STRING(255),
         allowNull: false,
     },
-    data_nascimento: {
+    Date: {
         type: Sequelize.DATE,
+        allowNull: false
     },
     email: {
         type: Sequelize.STRING(255),
-        allowNull: false
+        allowNull: false,
+        unique: true
     },
-    senha: {
-        type: Sequelize.STRING(255),
+    password: {
+        type: Sequelize.TEXT,
         allowNull: false,
     },
 }, {
@@ -33,8 +35,8 @@ const Usuario = database.define('users', {
 
 //Criar uma tabela quando não existe nenhuma tabela
     
-   // Usuario.sync();
+   //Usuario.sync();
 
 //Verifique se há diferença na tabela, faça a alteração
 //User.sync({alter: true})
-module.exports = Usuario
+module.exports = User

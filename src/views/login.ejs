@@ -1,7 +1,5 @@
 <body>
     <%- include("./partials/header") %>
-
-<<<<<<< HEAD
     <main>
         <section>
             <div class="main-login">
@@ -9,26 +7,12 @@
                 <div class="main-login__form">
                     <form method="post">
                         <label for="input-email" >E-mail *  </label>
-                            <input type="email" name="email" id="email34" value="<%=data.email%>" />
+                            <input type="input-email" name="email" id="email" value="<%=data.email%>" />
                         
                         <label for="input-password">Senha *  </label>
-                            <input type="password" name="password" id="password23" value="<%=data.password%>" />
+                            <input type="input-password" name="password" id="password" value="<%=data.password%>" />
                        
                         <div>
-=======
-        <main>
-            <section>
-                <div class="main-login">
-                    <h2>Entrar</h2>
-                    <div class="main-login__form">
-                        <form action="" method="post">
-                            <label>E-mail *
-                                <input type="email" name="email" id="e-mail">
-                            </label>
-                            <label>Senha *
-                                <input type="password" name="password" id="password">
-                            </label>
->>>>>>> 78c51e862ec10e4c5e49df2b9c1268739b303036
                             <div>
                                 <div>
                                     <label id="checkbox">Lembre-me
@@ -39,13 +23,7 @@
                                 <a id="tag-tablet" href="#">Perdeu sua senha?</a>
                                 <button type="submit">Acessar</button>
                             </div>
-<<<<<<< HEAD
-                            <a id="tag-tablet" href="#">Perdeu sua senha?</a>
-                            <button type="submit">Acessar</button>
-                        </div>
                     </form>
-                    
-  
                     <% if (errors) { %>
                         <ul>
                           <% for (let error of errors) { %>
@@ -60,10 +38,10 @@
                 <div class="main-login__form">
                     <form method="post">
                         <label>E-mail *
-                            <input type="email" name="email" id="email23">
+                            <input type="email" name="email" id="email">
                         </label>
                         <label>Senha *
-                            <input type="password" name="password" id="password34">
+                            <input type="password" name="password" id="password">
                         </label>
 
                         <div id="div-register">
@@ -115,9 +93,7 @@
                 <div class="security_methods">
                     <div class="security_methods--brands">
                         <img src="/public/images/brands/google-safe-browsing.svg" alt="Logotipo Google Safe Browsing.">
-=======
                         </form>
->>>>>>> 78c51e862ec10e4c5e49df2b9c1268739b303036
                     </div>
                 </div>
                 <div class="main-login">
